@@ -1,268 +1,593 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AiSummaries>
   <Fault code="12" title="No normal signals are received from the crankshaft position sensor.">
-    <AISummary>This fault means the ECU isn't getting a signal from the crankshaft position sensor. This sensor is critical, as it tells the ECU the engine's speed and position to time the spark and fuel injection correctly. A failure will cause the engine to not start or to cut out while running.
+    <AISummary>This fault code often appears when the engine fails to crank, which can be misleading. The Engine Control Unit (ECU) expects to receive a rotation signal from the crankshaft position sensor the moment the starter button is pressed. If the engine doesn't turn over for any reason (e.g., a bad starter relay or weak battery), the ECU receives no signal and incorrectly logs a fault for the sensor.
 
-What to try:
-- Locate the sensor (usually on one of the engine side covers) and check its electrical connector. Unplug it, check for dirt or corrosion, and plug it back in securely.
-- Trace the wire from the sensor as far as you can, looking for any obvious damage or pinches.
-- If the wiring looks good, the sensor itself may have failed and needs to be replaced.</AISummary>
+1. Understanding the Crankshaft Position Sensor (CPS):
+- Function: The CPS is critical. It tells the ECU the precise speed and position of the crankshaft, which is essential for timing fuel injection and spark.
+- Symptom of True Failure: If the engine cranks but does not start, or if it cuts out while running, the sensor itself could be the issue.
+
+2. How to Diagnose the Issue:
+- Check the Cranking System First: If the engine does not turn over when you press the starter button, ignore the sensor for now.
+    - Battery: Is the battery fully charged? A weak battery may click but not have enough power to engage the starter motor.
+    - Starter Relay/Solenoid: This is a very common point of failure. You may hear a "click" from the relay, but the power isn't being sent to the starter motor. Test the relay for proper function.
+- Check the Sensor System: If the engine cranks normally but refuses to start:
+    - Connector: Locate the sensor (usually on one of the engine side covers) and inspect its electrical connector. Unplug it, check for moisture or corrosion, and ensure it's securely reconnected.
+    - Wiring: Trace the wire from the sensor as far as possible, looking for any obvious damage, pinching, or breaks.
+    - Resistance Test: Using a multimeter, you can test the sensor's resistance. The service manual will provide the correct Ohm specification. If it's out of range, the sensor has failed.
+
+3. How to Fix and Reset:
+- Repair the Root Cause: Replace the faulty component (e.g., battery, starter relay, or the sensor itself).
+- Reset the Code: The fault code will typically clear itself once the ECU receives a valid signal from the sensor after the engine starts.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 12 crankshaft position sensor problem</SearchQuery>
   </Fault>
   <Fault code="13" title="Cylinder-#1 intake air pressure sensor: open or short circuit detected.">
-    <AISummary>This indicates an electrical problem with the intake air pressure sensor (also known as a MAP sensor) for the front cylinder (#1). This sensor measures engine vacuum to ensure the correct air-fuel mixture. The bike may run poorly, have an unstable idle, or have bad fuel economy.
+    <AISummary>This fault code indicates a specific electrical problem with the intake air pressure sensor (also known as a MAP sensor) for the front cylinder (#1). The ECU has detected an open or short circuit in the sensor or its wiring. This is distinct from Fault 14, which relates to the sensor's vacuum hose.
 
-What to try:
-- This is an electrical fault, so the first step is to check the sensor's wiring connector.
-- Locate the sensor on the intake manifold for the front cylinder.
-- Disconnect the electrical plug, check for dirt or corrosion, and reconnect it securely.</AISummary>
+1. Understanding the MAP Sensor:
+- Function: It measures the vacuum pressure in the intake manifold. This data helps the ECU calculate engine load to deliver the correct amount of fuel.
+- Symptoms of Failure: A faulty MAP sensor can cause a rich or lean running condition, leading to poor fuel economy, rough idling, and hesitation.
+
+2. How to Diagnose the Issue:
+- Connector Inspection: Locate the MAP sensor on the intake manifold for the front cylinder. Disconnect its electrical plug. Check the terminals (both on the sensor and in the plug) for corrosion, dirt, or bent pins.
+- Wiring Harness Check: Carefully inspect the wires leading to the sensor's connector. Look for any signs of chafing, breaks, or damage where the harness might rub against the frame or engine.
+- Sensor Test: The service manual provides specifications for testing the sensor. This usually involves using a multimeter to check for a specific voltage output or resistance.
+
+3. How to Fix and Reset:
+- Clean and Secure: Often, simply cleaning the contacts with an electrical cleaner and ensuring a snug reconnection can solve the problem.
+- Repair or Replace: If the wiring is damaged, it will need to be repaired. If the tests confirm the sensor itself is faulty, it will need to be replaced.
+- Reset the Code: The code should clear itself after the ECU detects normal signals from the sensor upon starting the engine.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 13 front MAP sensor electrical</SearchQuery>
   </Fault>
   <Fault code="14" title="Cylinder-#1 intake air pressure sensor: hose system malfunction (clogged or detached hose).">
-    <AISummary>This fault means the vacuum hose connected to the front cylinder's air pressure sensor is likely detached, cracked, or clogged. This is often a simple physical issue rather than an electrical one. The bike may run rough, especially at idle.
+    <AISummary>This fault code means the MAP sensor for the front cylinder (#1) is not reading the engine vacuum correctly due to a physical problem with its vacuum hose. This is a common, and usually simple, mechanical issue to resolve.
 
-What to try:
-- Locate the sensor on the intake manifold for the front cylinder.
-- Find the small rubber vacuum hose attached to it.
-- Check that the hose is firmly connected at both ends (to the sensor and the throttle body).
-- Inspect the entire length of the hose for cracks, splits, or blockages. Replacing a cracked vacuum hose is a common and easy fix.</AISummary>
+1. Understanding the MAP Sensor Hose:
+- Function: A small rubber hose connects the MAP sensor to the throttle body. The sensor reads the vacuum pressure through this hose.
+- Why it Fails: Hoses can become disconnected, crack and leak with age, or become clogged with oil residue and gunk from the intake system.
+
+2. How to Diagnose the Issue:
+- Visual Inspection: Locate the MAP sensor on the front cylinder's intake manifold and find the small rubber hose attached to it.
+- Check Connections: Ensure the hose is firmly attached at both ends—one end on the sensor's nipple, the other on a port on the throttle body.
+- Inspect for Damage: Remove the hose completely. Carefully inspect its entire length for any cracks, splits, or hardening. Bend and squeeze it to reveal hidden cracks.
+- Check for Blockages: With the hose removed, look through it to ensure it's clear. Use a small wire or a blast of compressed air to clear any internal blockages. Also check that the ports on the sensor and throttle body are clear.
+
+3. How to Fix and Reset:
+- Reconnect or Replace: If the hose was simply disconnected, reconnect it securely. If it is cracked or damaged, replace it with a new vacuum hose of the same diameter.
+- Reset the Code: The fault should clear automatically once the engine is started and the ECU receives a stable and correct vacuum signal from the sensor.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 14 MAP sensor vacuum hose</SearchQuery>
   </Fault>
   <Fault code="15" title="Throttle position sensor: open or short circuit detected.">
-    <AISummary>The Throttle Position Sensor (TPS) tells the ECU how far open the throttle is. A fault here can cause poor throttle response, erratic idle, stalling, or a feeling of hesitation when you accelerate.
+    <AISummary>This fault points to an electrical issue with the Throttle Position Sensor (TPS). The TPS is a vital sensor that tells the ECU the exact angle of your throttle plates, directly translating your throttle hand's input into a signal for fuel delivery.
 
-What to try:
-- Check the electrical connection at the TPS, which is located on the side of the throttle bodies. Ensure it's clean and secure.
-- Sometimes, these sensors can fail internally or lose their calibration. If checking the connection doesn't help, the sensor may need to be replaced.</AISummary>
+1. Understanding the TPS:
+- Function: As you twist the throttle, the TPS sends a variable voltage signal to the ECU. This allows the ECU to respond instantly to your inputs.
+- Symptoms of Failure: A faulty TPS can cause a wide range of issues, including a high or erratic idle, severe hesitation or stumbling on acceleration, poor throttle response, and stalling. Note that Yamaha has had recalls on TPS units on other models, making it a known potential failure point.
+
+2. How to Diagnose the Issue:
+- Connector Check: The TPS is located on the side of the throttle body assembly. The first step is to check its electrical connector. Ensure it is clean, dry, and securely fastened.
+- Diagnostic Mode Check: The bike's built-in diagnostic mode is the best tool for this. You can view the TPS output values directly. The reading should be within a specific range at closed throttle (e.g., 15-17) and should increase smoothly and without any jumps or dead spots as you slowly open the throttle to its wide-open value (e.g., 97-100).
+- Wiring Inspection: Check the wires leading to the TPS for any signs of damage.
+
+3. How to Fix and Reset:
+- Clean and Reseat: Sometimes a poor connection is the only issue.
+- Adjust or Replace: If the diagnostic mode shows the closed-throttle value is out of spec, it may be adjustable. However, if the output is erratic or has dead spots, the sensor has failed and must be replaced.
+- Reset the Code: The code should clear after the engine is started with a properly functioning TPS.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 15 throttle position sensor TPS issue</SearchQuery>
   </Fault>
   <Fault code="17" title="EXUP servo motor circuit: open or short circuit detected.">
-    <AISummary>This is an electrical fault with the EXUP servo motor. The EXUP system is a valve in the exhaust that adjusts back-pressure to improve torque. This fault suggests a problem with the motor's wiring or the motor's internal electronics.
+    <AISummary>This fault code indicates an electrical problem directly related to the EXUP servo motor or its wiring. It is different from the more common code 18, which signifies a mechanical jam. With code 17, the ECU has detected an open circuit (like a broken wire) or a short circuit in the motor's electrical system.
 
-What to try:
-- Check the wiring connector on the EXUP servo motor, which is typically located under the seat.
-- Inspect the wiring for any signs of damage.
-- This fault is less common than the motor being stuck (Fault 18); it points specifically to an electrical issue.</AISummary>
+1. Understanding the EXUP Servo Motor:
+- Function: This is the electric motor, usually located under the rider's seat, that pulls the cables to operate the EXUP valve in the exhaust.
+- Failure Mode: This fault suggests the motor itself has an internal electronic failure, or the wiring connecting it to the main harness is damaged.
+
+2. How to Diagnose the Issue:
+- Listen on Startup: When you turn the ignition on, you would typically hear the EXUP motor cycle. With fault 17, you will likely hear nothing at all.
+- Connector Inspection: The primary suspect is the large multi-pin electrical connector on the servo motor. Disconnect it and check for any signs of corrosion, moisture, or backed-out pins. Ensure it is clean and dry.
+- Wiring Harness Check: Carefully inspect the wiring harness leading from the servo motor to the main ECU harness. Look for any signs of chafing, pinching, or breaks.
+
+3. How to Fix and Reset:
+- Repair Connection: If you find a problem with the connector or wiring, fixing it should resolve the issue.
+- Replace the Motor: If the wiring and connector are in perfect condition, the fault lies within the servo motor's internal electronics. The motor assembly will need to be replaced.
+- Reset the Code: Once the electrical circuit is complete and the ECU can communicate with the motor, the code will clear on the next startup.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 17 EXUP servo electrical fault</SearchQuery>
   </Fault>
   <Fault code="18" title="EXUP servo motor is stuck.">
-    <AISummary>This is a very common fault. It means the EXUP valve in the exhaust is not moving as commanded. Usually, this is a mechanical problem, not an electrical one. The valve can get clogged with carbon, or the cables that operate it can seize.
+    <AISummary>Fault code 18 is one of the most common issues on a Yamaha MT-01 and indicates that the EXUP (Exhaust Ultimate Power Valve) system is stuck. The EXUP valve is a critical component designed to adjust exhaust back-pressure, optimizing torque and power across the entire rev range. When it gets stuck, the bike's performance can feel sluggish, especially at certain RPMs. This fault is almost always a mechanical issue rather than an electrical one.
 
-What to try:
-- First, check the two EXUP cables that run from the servo motor to the valve on the exhaust pipe. Ensure they are moving freely.
-- If the cables are fine, the valve itself is likely sticking. It may need to be removed and cleaned of carbon deposits to restore proper movement. This is a frequent maintenance item on these bikes.</AISummary>
+1. Understanding the EXUP System:
+- What it is: The EXUP is a butterfly valve located inside the exhaust collector pipe.
+- How it works: It is controlled by a servo motor (located under the seat) via a pair of pull-pull cables. At low RPMs, the valve is mostly closed to increase back-pressure for better low-end torque. As RPMs increase, the servo motor opens the valve to allow for better gas flow and top-end power.
+- Why it fails: The valve is in a very harsh environment and is prone to seizing due to carbon buildup from exhaust gases. The cables can also stretch, fray, or seize.
+
+2. How to Diagnose the Issue:
+- Listen on Startup: When you turn the ignition key ON, you should hear the EXUP servo motor whirring for a few seconds as it cycles the valve through its full range to self-calibrate. If you hear the motor but the fault code still appears, the problem is almost certainly a jammed valve or seized cables. If you don't hear the motor, the issue could be the motor itself or an electrical problem (see Fault Code 17).
+- Visual Inspection: Observe the pulley on the EXUP valve (on the exhaust pipe) while an assistant turns the ignition on. You should see it rotate back and forth. If it doesn't move, or only moves slightly, it confirms the system is stuck.
+- Manual Check: Disconnect the cables from the servo motor end. Now try to rotate the pulley on the exhaust valve by hand. It should move smoothly with some spring resistance. If it is stiff or completely seized, you have found the problem.
+
+3. How to Fix a Stuck EXUP Valve:
+- Access the Valve and Cables: You may need to remove heat shields or other components to get clear access to the valve and the cable mechanism on the exhaust pipe.
+- Clean the Valve:
+  - Liberally spray a penetrating oil (like PB Blaster or Liquid Wrench) onto the valve shaft where it enters the exhaust pipe. Let it soak.
+  - Gently work the valve back and forth by hand using the pulley. Continue adding penetrating oil until it moves freely through its full range of motion.
+  - For a more thorough cleaning, you would need to remove the exhaust system to access and clean the valve butterfly directly with a carburetor cleaner and a wire brush.
+- Service the Cables:
+  - While the cables are disconnected, check them for fraying and ensure they move smoothly within their sheaths.
+  - Use a cable lubrication tool to force lubricant through the cables to ensure they are not the cause of the binding.
+- Reassemble and Adjust:
+  - Reconnect the cables.
+  - Follow the service manual procedure to correctly adjust the cable tension. Proper adjustment is critical for the system to work without putting unnecessary strain on the servo motor.
+
+4. Reset the Fault Code:
+- Once the mechanical issue is resolved and the valve can move freely, the fault code should clear itself automatically after you start the engine. There is no special reset procedure required.
+
+5. Important Considerations:
+- Service Manual: The Yamaha MT-01 service manual contains detailed diagrams and specific adjustment procedures for the EXUP cables. This is an invaluable resource.
+- Regular Maintenance: The EXUP valve should be considered a regular maintenance item. Cleaning and lubricating the valve shaft and cables once a year can prevent this fault from occurring.
+- Professional Help: If you are not comfortable working on your exhaust system, a qualified mechanic can perform this service for you.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 18 EXUP valve stuck cleaning</SearchQuery>
   </Fault>
   <Fault code="19" title="A break or disconnection of the blue/yellow lead of the ECU is detected.">
-    <AISummary>This fault indicates a very specific wiring issue related to the sidestand switch circuit. The ECU isn't receiving the correct signal, which can prevent the bike from starting when in gear, even if the sidestand is up.
+    <AISummary>This is a very specific fault code that points to an open circuit in the sidestand switch safety system. The ECU uses this circuit to prevent the engine from running when the bike is in gear with the sidestand down.
 
-What to try:
-- Check the main ECU connectors to ensure they are fully seated.
-- Inspect the wiring around the sidestand switch and its connector for any damage.
-- The fault is an open circuit, meaning a wire is likely broken or a pin has backed out of a connector.</AISummary>
+1. Understanding the Sidestand Switch Circuit:
+- Function: This is a safety interlock. It allows the bike to start and run in neutral with the stand down, but will cut the engine if you select a gear.
+- Symptom: The classic symptom for this fault is that the engine will start and run perfectly in neutral, but will die instantly the moment you shift into first gear, even with the sidestand up.
+
+2. How to Diagnose the Issue:
+- The Specific Wire: The fault code helpfully identifies a break in the "blue/yellow lead". This gives you a specific wire to trace.
+- Check Connectors: The problem is often a poor connection.
+    - Sidestand Switch Connector: Find the switch on the sidestand pivot and trace its wire to the first electrical connector. Unplug it and check for corrosion or damage.
+    - Main ECU Connector: The blue/yellow wire runs to the main ECU. Check the large ECU connectors to ensure they are fully seated and that the specific pin for this wire hasn't backed out.
+- Inspect the Wire Itself: Look for any signs of physical damage to the blue/yellow wire along its entire length, especially where it might be pinched or chafed by moving parts.
+
+3. How to Fix and Reset:
+- Repair the Connection: Most often, the fix is cleaning a connector or repairing a broken section of the wire.
+- Faulty Switch: It's also possible the switch itself has failed internally. It can be tested with a multimeter for continuity.
+- Reset the Code: The fault will clear automatically once the ECU detects a complete circuit when the bike is in gear with the sidestand up.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 19 sidestand switch wiring</SearchQuery>
   </Fault>
   <Fault code="22" title="Air temperature sensor: open or short circuit detected.">
-    <AISummary>This sensor measures the temperature of the air entering the engine, which helps the ECU adjust the fuel mixture. A failure can cause cold starting problems or slightly poor running.
+    <AISummary>This fault indicates an electrical problem with the Intake Air Temperature (IAT) sensor. This sensor provides the ECU with information about the density of the incoming air, allowing for fine-tuning of the fuel mixture.
 
-What to try:
-- The air temperature sensor is located in the airbox.
-- Check its electrical connector for a secure fit and signs of corrosion.
-- Ensure the sensor itself is clean and properly installed in the airbox.</AISummary>
+1. Understanding the IAT Sensor:
+- Function: The IAT is a simple thermistor; its electrical resistance changes with temperature. Cold, dense air requires more fuel than hot, less-dense air for proper combustion.
+- Symptoms of Failure: A faulty IAT sensor can lead to difficulty starting when the engine is cold, slightly increased fuel consumption, and minor running issues.
+
+2. How to Diagnose the Issue:
+- Location: The IAT sensor is located inside the airbox, where it can accurately measure the temperature of the air entering the engine.
+- Connector Inspection: Access the airbox and locate the sensor's connector. Check for a secure fit and any signs of corrosion.
+- Wiring Check: Inspect the wiring leading to the sensor for any signs of damage.
+- Resistance Test: To confirm a sensor failure, you can test its resistance with a multimeter when it is unplugged. Compare the reading to a chart in the service manual, which shows the expected resistance at various temperatures.
+
+3. How to Fix and Reset:
+- Clean and Secure: A bad connection is a common culprit. Ensure the plug is clean and tight.
+- Replace the Sensor: If the sensor's resistance is out of specification for the ambient temperature, it has failed and needs to be replaced.
+- Reset the Code: The fault will clear once the ECU receives a valid signal from the new or reconnected sensor.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 22 air temperature sensor location</SearchQuery>
   </Fault>
   <Fault code="24" title="No normal signal is received from the O2 sensor.">
-    <AISummary>The O2 sensor measures the amount of unburnt oxygen in the exhaust to fine-tune the air-fuel ratio for efficiency and emissions. A faulty sensor can lead to increased fuel consumption and poor running.
+    <AISummary>This fault code means the ECU is not receiving a valid signal from the O2 (Oxygen) sensor located in the exhaust. This sensor is key to the bike's fuel efficiency and emissions control.
 
-What to try:
-- Locate the O2 sensor screwed into the exhaust pipe.
-- Check its electrical connector for damage or corrosion.
-- These sensors can sometimes fail with age and may need to be replaced.</AISummary>
+1. Understanding the O2 Sensor:
+- Function: The O2 sensor measures the amount of unburnt oxygen in the exhaust gases. It sends this information to the ECU, which then fine-tunes the air-fuel ratio in real-time (this is called "closed-loop" operation).
+- Symptoms of Failure: A faulty O2 sensor typically causes the bike to run in a default "open-loop" mode, which is usually richer. This results in poor fuel economy, a jerky or "snatchy" throttle response at low, steady RPMs, and potentially a smell of unburnt fuel.
+
+2. How to Diagnose the Issue:
+- Location: The O2 sensor is screwed directly into the exhaust pipe, usually just before the catalytic converter or collector box.
+- Connector Inspection: Trace the wire from the sensor to its electrical connector. This connection is exposed to the elements, so check carefully for corrosion, moisture, or damage.
+- Wiring Inspection: The wire runs very close to the hot exhaust. Inspect it carefully for any signs of melting, burning, or physical damage.
+- Aftermarket Systems: If you have an aftermarket exhaust, it may not have a port for the O2 sensor. In this case, an "O2 sensor eliminator" should be plugged into the harness. This fault code can indicate that the eliminator is missing or has failed.
+
+3. How to Fix and Reset:
+- Clean and Repair: Clean the connector and repair any damaged wiring.
+- Replace the Sensor: O2 sensors have a finite lifespan and eventually fail. If the wiring is good, the sensor itself needs to be replaced.
+- Install Eliminator: If you have an aftermarket exhaust, ensure the correct eliminator is properly installed.
+- Reset the Code: The code should clear after the ECU receives a valid signal from the sensor or eliminator.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 24 O2 oxygen sensor replacement</SearchQuery>
   </Fault>
   <Fault code="25" title="Cylinder-#2 intake air pressure sensor: open or short circuit detected.">
-    <AISummary>This is the same as Fault 13, but for the rear cylinder (#2). It indicates an electrical problem with the rear cylinder's intake air pressure sensor, which can cause poor running and unstable idle.
+    <AISummary>This fault code indicates a specific electrical problem with the intake air pressure sensor (MAP sensor) for the rear cylinder (#2). The ECU has detected an open or short circuit in the sensor or its wiring. This is the counterpart to Fault 13 and is distinct from Fault 26, which relates to the sensor's vacuum hose.
 
-What to try:
-- Locate the sensor for the rear cylinder and check its electrical plug for a secure, clean connection.</AISummary>
+1. Understanding the MAP Sensor:
+- Function: It measures the vacuum pressure in the intake manifold for the rear cylinder. This data helps the ECU calculate engine load to deliver the correct amount of fuel.
+- Symptoms of Failure: A faulty MAP sensor can cause a rich or lean running condition, leading to poor fuel economy, rough idling, and hesitation.
+
+2. How to Diagnose the Issue:
+- Connector Inspection: Locate the MAP sensor on the intake manifold for the rear cylinder. Disconnect its electrical plug. Check the terminals (both on the sensor and in the plug) for corrosion, dirt, or bent pins.
+- Wiring Harness Check: Carefully inspect the wires leading to the sensor's connector. Look for any signs of chafing, breaks, or damage where the harness might rub against the frame or engine.
+- Sensor Test: The service manual provides specifications for testing the sensor. This usually involves using a multimeter to check for a specific voltage output or resistance.
+
+3. How to Fix and Reset:
+- Clean and Secure: Often, simply cleaning the contacts with an electrical cleaner and ensuring a snug reconnection can solve the problem.
+- Repair or Replace: If the wiring is damaged, it will need to be repaired. If the tests confirm the sensor itself is faulty, it will need to be replaced.
+- Reset the Code: The code should clear itself after the ECU detects normal signals from the sensor upon starting the engine.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 25 rear MAP sensor electrical</SearchQuery>
   </Fault>
   <Fault code="26" title="Cylinder-#2 intake air pressure sensor: hose system malfunction (clogged or detached hose).">
-    <AISummary>This is the same as Fault 14, but for the rear cylinder (#2). It means the vacuum hose for the rear cylinder's pressure sensor is likely detached, cracked, or clogged.
+    <AISummary>This fault code means the MAP sensor for the rear cylinder (#2) is not reading the engine vacuum correctly due to a physical problem with its vacuum hose. This is a common, and usually simple, mechanical issue to resolve.
 
-What to try:
-- Find the sensor and its vacuum hose for the rear cylinder.
-- Check that the hose is firmly connected and inspect it for any cracks or blockages.</AISummary>
+1. Understanding the MAP Sensor Hose:
+- Function: A small rubber hose connects the MAP sensor to the throttle body. The sensor reads the vacuum pressure through this hose.
+- Why it Fails: Hoses can become disconnected, crack and leak with age, or become clogged with oil residue and gunk from the intake system.
+
+2. How to Diagnose the Issue:
+- Visual Inspection: Locate the MAP sensor on the rear cylinder's intake manifold and find the small rubber hose attached to it.
+- Check Connections: Ensure the hose is firmly attached at both ends—one end on the sensor's nipple, the other on a port on the throttle body.
+- Inspect for Damage: Remove the hose completely. Carefully inspect its entire length for any cracks, splits, or hardening. Bend and squeeze it to reveal hidden cracks.
+- Check for Blockages: With the hose removed, look through it to ensure it's clear. Use a small wire or a blast of compressed air to clear any internal blockages. Also check that the ports on the sensor and throttle body are clear.
+
+3. How to Fix and Reset:
+- Reconnect or Replace: If the hose was simply disconnected, reconnect it securely. If it is cracked or damaged, replace it with a new vacuum hose of the same diameter.
+- Reset the Code: The fault should clear automatically once the engine is started and the ECU receives a stable and correct vacuum signal from the sensor.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 26 rear MAP sensor vacuum hose</SearchQuery>
   </Fault>
   <Fault code="28" title="Engine temperature sensor: open or short circuit detected.">
-    <AISummary>This sensor measures the engine/coolant temperature. This information is vital for the ECU to adjust fuel for cold starts (like a choke) and to operate the cooling fan. A fault can cause hard starting or overheating issues.
+    <AISummary>This fault indicates an electrical problem with the Engine Coolant Temperature (ECT) sensor. This sensor is crucial for proper engine operation, affecting both cold starts and overheating protection.
 
-What to try:
-- Check the electrical connector on the sensor.
-- The sensor is typically screwed into the engine or radiator; trace the wire to find the plug.
-- Ensure the connection is clean and tight.</AISummary>
+1. Understanding the ECT Sensor:
+- Function: The ECT sensor tells the ECU the operating temperature of the engine.
+    - Cold Starts: When the engine is cold, the ECU uses this signal to provide a richer fuel mixture, similar to a choke on an older carbureted engine.
+    - Cooling System: When the engine gets hot, the ECU uses the signal from this same sensor to activate the radiator's cooling fan.
+- Symptoms of Failure: A faulty ECT can cause difficulty starting the engine when cold, a high idle speed, or cause the engine to overheat in traffic because the cooling fan never turns on.
+
+2. How to Diagnose the Issue:
+- Location: The sensor is typically screwed into the engine block or radiator, in direct contact with the coolant.
+- Connector Check: Trace the wire from the sensor to its electrical connector. Unplug it and inspect for corrosion or damage.
+- Wiring Inspection: Check the wire for any signs of damage, especially near hot or moving parts.
+- Resistance Test: The sensor can be tested with a multimeter. The service manual will have a chart showing the correct resistance values for different temperatures.
+
+3. How to Fix and Reset:
+- Clean and Secure: Address any connection issues first.
+- Replace the Sensor: If the sensor tests out of specification, it must be replaced. This will involve draining some coolant.
+- Reset the Code: The code will clear on its own once the ECU receives a valid signal.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 28 engine temperature sensor location</SearchQuery>
   </Fault>
   <Fault code="29" title="Decompression solenoid (thermistor): open or short circuit detected.">
-    <AISummary>The MT-01 has a decompression solenoid to make the large v-twin engine easier to crank over. This fault code points to a problem with the thermistor circuit that monitors this system. This could lead to difficulty starting the engine.
+    <AISummary>The MT-01 is a large-displacement V-twin, which can be difficult for the starter motor to turn over against high compression. To assist with this, it is equipped with a decompression system. This fault code points to an electrical issue with the thermistor that monitors this system.
 
-What to try:
-- Check the wiring and connector for the decompression solenoid.
-- An open or short circuit suggests a wiring issue is more likely than a mechanical failure.</AISummary>
+1. Understanding the Decompression System:
+- Function: A solenoid momentarily opens an exhaust valve slightly during startup to release some compression, making it easier for the engine to crank.
+- Failure Mode: Fault 29 specifically relates to the monitoring circuit (the thermistor), not the main solenoid coil. This means the ECU cannot properly check the status of the system.
+
+2. How to Diagnose the Issue:
+- Symptom: The primary symptom would be difficulty starting or slow, labored cranking.
+- Check Wiring and Connectors: The fault code points to an open or short circuit. The most likely cause is a damaged wire or a loose/corroded connector on the decompression solenoid assembly.
+- Inspect the Harness: Trace the wires from the solenoid and inspect for any damage.
+
+3. How to Fix and Reset:
+- Repair the Circuit: Find and fix the source of the open or short circuit. This usually involves repairing a wire or cleaning a connector.
+- Replace Component: If the wiring is intact, the thermistor component within the solenoid assembly may have failed.
+- Reset the Code: The fault will clear after the electrical issue is resolved.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 29 decompression solenoid thermistor</SearchQuery>
   </Fault>
   <Fault code="30" title="The vehicle has overturned.">
-    <AISummary>This code is triggered by the lean angle sensor (or tip-over switch), a safety device that cuts the engine if the bike falls over. It's usually not a fault.
+    <AISummary>This code is generated by the lean angle sensor (also known as a tip-over switch). This is a safety device and its activation is normal operation, not a component fault.
 
-What to try:
-- Simply turn the ignition key OFF and then back ON again. This should reset the sensor and clear the code.
-- If the code does not clear, the sensor might be stuck or damaged from the fall.</AISummary>
+1. Understanding the Lean Angle Sensor:
+- Function: This sensor's job is to cut the engine and fuel pump immediately if the motorcycle is dropped or falls over. This prevents the engine from continuing to run and potentially causing a fire or further damage.
+- Activation: It triggers when the bike leans past a certain angle (e.g., more than 65 degrees from vertical).
+
+2. How to Diagnose the Issue:
+- It's a Status, Not a Fault: In 99% of cases, this code simply means the sensor did its job correctly.
+- Code Won't Clear: If you have picked the bike up and the code will not clear after cycling the ignition, then the sensor may be damaged or stuck.
+
+3. How to Fix and Reset:
+- Standard Reset Procedure:
+    1.  Pick the motorcycle up into its normal upright position.
+    2.  Turn the ignition key to the OFF position.
+    3.  Wait a few seconds.
+    4.  Turn the ignition key back to the ON position.
+- Stuck Sensor: If the code persists, locate the lean angle sensor. Ensure it is mounted securely and in its correct orientation (there's usually an arrow indicating "UP"). Tapping it gently might free a stuck internal mechanism. If it's damaged from the fall, it will need to be replaced.
+- Clearing the Code: The reset procedure above is all that's needed. The code will be removed from the current faults display.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 30 reset tip over sensor</SearchQuery>
   </Fault>
   <Fault code="33" title="Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil.">
-    <AISummary>The ECU has detected a problem with an ignition coil for the front cylinder. This will cause the cylinder to misfire or not fire at all, leading to a significant loss of power, rough running, and a strong smell of unburnt fuel.
+    <AISummary>This fault code indicates the ECU has detected a problem in the low-voltage primary circuit of one of the ignition coils for the front cylinder (#1). The MT-01 uses twin spark plugs per cylinder, hence the "left or right" designation. The result is a misfire or a completely dead cylinder.
 
-What to try:
-- Check the electrical connections on both ignition coils for the front cylinder.
-- A loose spark plug cap or a bad coil is the most likely cause. This may require replacing the faulty ignition coil.</AISummary>
+1. Understanding the Ignition Coil Circuit:
+- Primary Circuit: This is the low-voltage side that gets a signal from the ECU. A fault here means the coil isn't being "charged" correctly before it creates a spark.
+- Symptoms: The engine will run on only one cylinder, resulting in a dramatic loss of power, very rough and shaky running, and a strong smell of unburnt fuel from the exhaust.
+
+2. How to Diagnose the Issue:
+- Identify the Coils: Locate the two ignition coils that feed the spark plugs for the front cylinder.
+- Check Primary Connectors: Inspect the small, low-voltage electrical connectors on both coils. Ensure they are clean, tight, and free of corrosion.
+- Check Spark Plug Caps: Make sure the spark plug caps are firmly seated on the spark plugs.
+- Test the Coils: You can test the primary winding resistance of the coils with a multimeter. Compare the reading to the specification in the service manual. A reading that is too high (open circuit) or too low (short circuit) indicates a failed coil.
+
+3. How to Fix and Reset:
+- Secure Connections: Often, the issue is just a loose connection.
+- Replace the Faulty Coil: If one of the coils tests bad, it must be replaced. It's often recommended to replace the spark plugs at the same time.
+- Reset the Code: The fault will clear once the engine is started and the ECU no longer detects the primary circuit fault.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 33 front ignition coil test</SearchQuery>
   </Fault>
   <Fault code="34" title="Malfunction detected in the primary wire of the cylinder-#2 left ignition coil.">
-    <AISummary>Same as fault 33, but for the rear cylinder's left-side ignition coil. The rear cylinder is misfiring or not firing. You will experience a major loss of power and rough running.
+    <AISummary>This fault code indicates the ECU has detected a problem in the low-voltage primary circuit of the left-side ignition coil for the rear cylinder (#2). The result is a misfire or a completely dead cylinder.
 
-What to try:
-- Check the wiring and plug connection on the specified ignition coil for the rear cylinder.
-- Check the spark plug cap is secure. If connections are good, the coil itself has likely failed.</AISummary>
+1. Understanding the Ignition Coil Circuit:
+- Primary Circuit: This is the low-voltage side that gets a signal from the ECU. A fault here means the coil isn't being "charged" correctly before it creates a spark.
+- Symptoms: The engine will run on only one cylinder, resulting in a dramatic loss of power, very rough and shaky running, and a strong smell of unburnt fuel from the exhaust.
+
+2. How to Diagnose the Issue:
+- Identify the Coil: Locate the left-side ignition coil for the rear cylinder.
+- Check Primary Connector: Inspect the small, low-voltage electrical connector on the coil. Ensure it is clean, tight, and free of corrosion.
+- Check Spark Plug Cap: Make sure the spark plug cap is firmly seated on the spark plug.
+- Test the Coil: You can test the primary winding resistance of the coil with a multimeter. Compare the reading to the specification in the service manual. A reading that is too high (open circuit) or too low (short circuit) indicates a failed coil.
+
+3. How to Fix and Reset:
+- Secure Connections: Often, the issue is just a loose connection.
+- Replace the Faulty Coil: If the coil tests bad, it must be replaced.
+- Reset the Code: The fault will clear once the engine is started and the ECU no longer detects the primary circuit fault.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 34 rear ignition coil problem</SearchQuery>
   </Fault>
   <Fault code="35" title="Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil.">
-    <AISummary>This is a duplicate of fault code 33, indicating a primary ignition coil fault on the front cylinder. The bike will run on one cylinder, resulting in poor performance.
+    <AISummary>This is a duplicate of fault code 33, indicating the ECU has detected a problem in the low-voltage primary circuit of one of the ignition coils for the front cylinder (#1). The MT-01 uses twin spark plugs per cylinder, hence the "left or right" designation. The result is a misfire or a completely dead cylinder.
 
-What to try:
-- Check the electrical connectors and spark plug caps on both front cylinder ignition coils.
-- A faulty coil or a break in the primary wiring is the likely cause.</AISummary>
+1. Understanding the Ignition Coil Circuit:
+- Primary Circuit: This is the low-voltage side that gets a signal from the ECU. A fault here means the coil isn't being "charged" correctly before it creates a spark.
+- Symptoms: The engine will run on only one cylinder, resulting in a dramatic loss of power, very rough and shaky running, and a strong smell of unburnt fuel from the exhaust.
+
+2. How to Diagnose the Issue:
+- Identify the Coils: Locate the two ignition coils that feed the spark plugs for the front cylinder.
+- Check Primary Connectors: Inspect the small, low-voltage electrical connectors on both coils. Ensure they are clean, tight, and free of corrosion.
+- Check Spark Plug Caps: Make sure the spark plug caps are firmly seated on the spark plugs.
+- Test the Coils: You can test the primary winding resistance of the coils with a multimeter. Compare the reading to the specification in the service manual. A reading that is too high (open circuit) or too low (short circuit) indicates a failed coil.
+
+3. How to Fix and Reset:
+- Secure Connections: Often, the issue is just a loose connection.
+- Replace the Faulty Coil: If one of the coils tests bad, it must be replaced. It's often recommended to replace the spark plugs at the same time.
+- Reset the Code: The fault will clear once the engine is started and the ECU no longer detects the primary circuit fault.</AISummary>
     <SearchQuery>Yamaha MT-01 fault code 35 front ignition coil misfire</SearchQuery>
   </Fault>
   <Fault code="36" title="Malfunction detected in the primary wire of the cylinder-#2 right ignition coil.">
-    <AISummary>Same as fault 34, but for the rear cylinder's right-side ignition coil. The bike will be misfiring on the rear cylinder.
+    <AISummary>This fault code indicates the ECU has detected a problem in the low-voltage primary circuit of the right-side ignition coil for the rear cylinder (#2). The result is a misfire or a completely dead cylinder.
 
-What to try:
-- Check the wiring and plug connection on the specified ignition coil for the rear cylinder.
-- Ensure the spark plug cap is tight. If the connections look good, the coil itself is the probable culprit.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 36 rear ignition coil replacement</SearchQuery>
-  </Fault>
-  <Fault code="37" title="Engine speed is high when the engine is idling.">
-    <AISummary>The Idle Speed Control (ISC) valve is not working correctly, causing the idle to be too high. This could be due to the valve being stuck open or a fault in its wiring.
+1. Understanding the Ignition Coil Circuit:
+- Primary Circuit: This is the low-voltage side that gets a signal from the ECU. A fault here means the coil isn't being "charged" correctly before it creates a spark.
+- Symptoms: The engine will run on only one cylinder, resulting in a dramatic loss of power, very rough and shaky running, and a strong smell of unburnt fuel from the exhaust.
 
-What to try:
-- Check for any obvious air leaks in the intake system after the throttle plates.
-- Check the throttle cables to ensure they aren't stuck and are allowing the throttle to close fully.
-- If those are fine, the ISC valve itself may need cleaning or replacement.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 37 high idle ISC valve cleaning</SearchQuery>
-  </Fault>
-  <Fault code="38" title="Decompression solenoid: open or short circuit detected.">
-    <AISummary>This points to an electrical fault in the decompression solenoid itself, which helps the engine turn over on startup. Unlike fault 29, this is not related to the monitoring circuit, but the main solenoid circuit. This could make the bike hard to start.
-
-What to try:
-- Check the electrical connector on the decompression solenoid for a clean, tight fit.
-- Inspect the wiring to and from the solenoid for any damage.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 38 decompression solenoid location</SearchQuery>
-  </Fault>
-  <Fault code="41" title="Lean angle cut-off switch: open or short circuit detected.">
-    <AISummary>This fault code indicates an electrical problem with the tip-over sensor circuit itself, as opposed to it just being activated (Fault 30). The engine may not start or may cut out unexpectedly.
-
-What to try:
-- Locate the lean angle sensor.
-- Check its electrical connector for a secure and clean connection.
-- If the wiring is okay, the sensor itself might have failed and needs replacement.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 41 lean angle sensor bypass test</SearchQuery>
-  </Fault>
-  <Fault code="42" title="A. No normal signals are received from the speed sensor. B. Open circuit is detected in the neutral switch.">
-    <AISummary>This code has two possible meanings. It could be a faulty speed sensor, which would cause the speedometer to stop working. Or, it could be a faulty neutral switch, which would prevent the neutral light from coming on and may cause starting issues.
-
-What to try:
-- For the speed sensor, check the sensor's connection, usually located near the front sprocket or wheel.
-- For the neutral switch, check its wiring, typically found on the side of the engine near the gear shift lever.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 42 speed sensor or neutral switch fix</SearchQuery>
-  </Fault>
-  <Fault code="43" title="The ECU is unable to monitor the battery voltage.">
-    <AISummary>The ECU isn't seeing the correct battery voltage, usually due to a wiring problem between the battery and the ECU. This can cause various unpredictable electrical issues.
-
-What to try:
-- Check your main battery terminals to ensure they are clean and tight.
-- Inspect the main ECU connectors and the main fuse for corrosion or a loose connection.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 43 ECU battery voltage error</SearchQuery>
-  </Fault>
-  <Fault code="44" title="Error is detected while reading or writing on EEPROM (CO adjustment value).">
-    <AISummary>This is an internal memory error within the ECU. It often relates to the stored CO adjustment values for the fuel mixture. This is not a sensor or wiring issue.
-
-What to try:
-- This fault can sometimes be a temporary glitch. Try disconnecting the battery for 10-15 minutes to reset the ECU.
-- If the fault code returns, it indicates a problem with the ECU itself, which may need to be replaced.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 44 ECU EEPROM error reset</SearchQuery>
-  </Fault>
-  <Fault code="46" title="Power supply to the fuel injection system is not normal.">
-    <AISummary>This fault indicates that the entire fuel injection system is receiving low or unstable voltage. This is almost always a sign of a problem with the bike's charging system (the alternator or regulator/rectifier). The bike may run until the battery dies.
-
-What to try:
-- This is a serious fault. You need to diagnose the charging system.
-- Check the battery voltage with the engine running. It should be around 13.5-14.5 volts. If it's much lower (e.g., 12 volts or less), your bike is not charging.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 46 charging system problem</SearchQuery>
-  </Fault>
-  <Fault code="50" title="Faulty ECU memory. (When this malfunction is detected in the ECU, the fault code number might not appear on the meter.)">
-    <AISummary>This is a critical error indicating the ECU's internal memory is corrupt or has failed. The bike will likely not run at all. This is not something that can be fixed with simple checks.
-
-What to try:
-- You can try disconnecting the battery for 15 minutes to see if it's a temporary glitch, but it's unlikely to solve the problem.
-- This fault code almost always means the ECU has failed and needs to be replaced.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 50 faulty ECU memory replacement</SearchQuery>
-  </Fault>
-  <Fault code="62" title="Muffler cooling fan temperature sensor: open or short circuit detected.">
-    <AISummary>The MT-01 has a cooling fan for the under-seat muffler. This fault indicates an electrical problem with the sensor that tells the fan when to turn on. The fan may not operate, which could lead to overheating of the muffler and surrounding components.
-
-What to try:
-- Check the wiring and connector for the temperature sensor located on the muffler assembly.</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 62 muffler fan temperature sensor</SearchQuery>
-  </Fault>
-  <Fault code="63" title="Engine trouble warning light is flashing. (Abnormally high temperature is detected by muffler cooling fan temperature sensor.)">
-    <AISummary>The muffler temperature sensor is reading too high. This could be because the muffler is genuinely overheating, or because the sensor has failed. A common cause is the cooling fan not working due to a blown fuse or a faulty relay.
-
-What to try:
-- Check the 'muffler cover fan fuse' and 'ECU fuse'.
-- If the fuses are good, the fan motor relay or the fan itself might be the issue. You can check if the fan runs using the diagnostic mode (code 51).</AISummary>
-    <SearchQuery>Yamaha MT-01 fault code 63 muffler overheating fan not working</SearchQuery>
-  </Fault>
-  <Fault code="Er-1" title="No signals are received from the ECU.">
-    <AISummary>This error appears on your dashboard meter and means the meter isn't communicating with the bike's main computer (ECU). The bike will likely not start. This is a major communication failure.
-
-What to try:
-- Check the main fuse and the ignition fuse.
-- Check the large multi-pin connectors on the ECU to ensure they are plugged in securely.
-- Check the connector on the back of the instrument cluster (dashboard meter).</AISummary>
-    <SearchQuery>Yamaha MT-01 error code Er-1 no communication with ECU</SearchQuery>
-  </Fault>
-  <Fault code="Er-2" title="No signals are received from the ECU within the specified duration.">
-    <AISummary>Similar to Er-1, this indicates a communication problem between the ECU and the dashboard. However, this error means the connection is intermittent or timing out, rather than being completely dead. This often points to a loose connection.
-
-What to try:
-- The most likely cause is a pin not making good contact. Check and re-seat the main ECU connectors and the connector on the back of the instrument cluster.</AISummary>
-    <SearchQuery>Yamaha MT-01 error code Er-2 ECU communication timeout</SearchQuery>
-  </Fault>
-  <Fault code="Er-3" title="Data from the ECU cannot be received correctly.">
-    <AISummary>This is another communication error between the ECU and dashboard. It means data is being received, but it's garbled or corrupt. This could be caused by electrical interference or a poor connection.
-
-What to try:
-- Check that the main ECU and dashboard connectors are clean and secure.
-- Check that the battery terminals are tight, as poor power can sometimes cause data errors.</AISummary>
-    <SearchQuery>Yamaha MT-01 error code Er-3 corrupt ECU data</SearchQuery>
-  </Fault>
-  <Fault code="Er-4" title="Non-registered data has been received from the meter.">
-    <AISummary>This is a communication mismatch error. It can sometimes occur if either the ECU or the instrument cluster has been replaced with a part from a different model or year, or if there's a significant internal fault in one of the units.
-
-What to try:
-- First, check the wiring harness connectors between the ECU and meter for any signs of damage or moisture.
-- If you have recently replaced either component, this could be the cause.</AISummary>
-    <SearchQuery>Yamaha MT-01 error code Er-4 meter ECU mismatch</SearchQuery>
-  </Fault>
+2. How to Diagnose the Issue:
+- Identify the Coil: Locate the right-side ignition coil for the rear cylinder.
+- Check Primary Connector: Inspect the small, low-voltage electrical connector on the coil. Ensure it is clean, tight, and free of corrosion.
+- Check Spark Plug Cap: Make sure the spark plug cap is firmly seated on the spark plug.
+- Test the Coil: You can test the primary winding resistance of the coil with a multimeter. Compare the reading to the specification in the service manual. A reading that is too high (open circuit)
+or too low (short circuit) indicates a failed coil.
+3. How to Fix and Reset:
+Secure Connections: Often, the issue is just a loose connection.
+Replace the Faulty Coil: If the coil tests bad, it must be replaced.
+Reset the Code: The fault will clear once the engine is started and the ECU no longer detects the primary circuit fault.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 36 rear ignition coil replacement</SearchQuery>
+</Fault>
+<Fault code="37" title="Engine speed is high when the engine is idling.">
+<AISummary>This fault code indicates a problem with the Idle Speed Control (ISC) system, resulting in an engine idle that is higher than the target RPM.
+1. Understanding the ISC System:
+Function: The ISC is a valve that the ECU controls to allow a small, precise amount of air to bypass the main throttle plates. This is how the ECU manages the idle speed and raises it slightly during cold starts.
+Why it Fails: The ISC valve can become clogged with carbon and oil deposits, causing it to stick open. It can also fail electrically. A vacuum leak in the intake system can also cause a high idle, but this fault code often points directly to the ISC valve itself.
+2. How to Diagnose the Issue:
+Check for Obvious Issues First:
+Throttle Cables: Ensure your throttle cables are not too tight, preventing the throttle plates from closing completely. There should be a small amount of free play at the throttle grip.
+Vacuum Leaks: With the engine idling, carefully spray a small amount of starter fluid or brake cleaner around the intake manifold boots. If the engine RPM changes, you have found a vacuum leak.
+Inspect the ISC Valve:
+Location: The ISC valve is mounted on the throttle body assembly.
+Cleaning: The most common fix is to remove the ISC valve and thoroughly clean its plunger and the air passages within the throttle body using carburetor cleaner. A stuck plunger is a very frequent cause.
+3. How to Fix and Reset:
+Adjust or Clean: Correct any cable tension issues, fix vacuum leaks, or clean the ISC valve.
+Replace the Valve: If cleaning the ISC valve does not resolve the issue, the unit may have failed electrically and will need to be replaced.
+Reset the Code: The code should clear automatically once the idle speed returns to the normal range.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 37 high idle ISC valve cleaning</SearchQuery>
+</Fault>
+<Fault code="38" title="Decompression solenoid: open or short circuit detected.">
+<AISummary>This fault code points to an electrical failure in the main circuit of the decompression solenoid. This is different from fault 29, which relates to the system's monitoring thermistor. This fault means the ECU has detected an open or short circuit in the solenoid's activation coil itself.
+1. Understanding the Decompression Solenoid:
+Function: To make the large V-twin engine easier to start, a solenoid momentarily opens an exhaust valve to release some compression, allowing the starter motor to spin the engine more easily.
+Failure Mode: This fault indicates a problem with the power circuit for the solenoid. The bike will likely be very difficult to start, with the starter motor struggling to turn the engine over.
+2. How to Diagnose the Issue:
+Symptom: The engine cranks very slowly or seems to get "stuck" on the compression stroke.
+Connector Inspection: Locate the decompression solenoid on the engine and check its main electrical connector. Ensure it is clean, secure, and free from corrosion.
+Wiring Check: Inspect the wires leading to the solenoid for any obvious signs of damage, burning, or breaks.
+Solenoid Test: You can test the resistance of the solenoid's coil with a multimeter. A reading of infinity indicates an open circuit (broken internal wire), while a reading of zero indicates a short. Compare the reading to the service manual's specification.
+3. How to Fix and Reset:
+Repair Wiring: Fix any issues found in the wiring harness or connector.
+Replace Solenoid: If the solenoid coil itself has failed its resistance test, the entire assembly must be replaced.
+Reset the Code: The code will clear once the ECU detects a healthy electrical circuit for the solenoid.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 38 decompression solenoid location</SearchQuery>
+</Fault>
+<Fault code="41" title="Lean angle cut-off switch: open or short circuit detected.">
+<AISummary>This fault code indicates an electrical problem within the lean angle sensor's circuit itself, or a failure of the sensor's internal components. This is different from Fault 30, which simply means the sensor was activated. A Fault 41 will prevent the bike from starting or cause it to cut out while riding.
+1. Understanding the Lean Angle Sensor Circuit:
+Function: The sensor is a safety device that cuts the engine if the bike falls over. It should provide a steady signal to the ECU when the bike is upright.
+Failure Mode: This fault means the ECU is not receiving the expected signal, either because a wire is broken (open circuit), a wire is grounding out (short circuit), or the sensor itself has failed.
+2. How to Diagnose the Issue:
+Symptoms: The engine will not start (no fuel pump prime), or it will stall intermittently or completely.
+Location: Find the lean angle sensor. It is a small box, often mounted under the seat or in the tail section, with an arrow indicating which way is "UP".
+Connector Check: Inspect the sensor's electrical connector for moisture, corrosion, or loose pins. This is a common point of failure.
+Wiring Inspection: Check the wiring leading to the sensor for any signs of damage or chafing.
+Bypass Test (for diagnostics only): A technician might temporarily bypass the sensor by placing a resistor across specific pins in the connector to see if the fault clears. This would confirm the sensor itself is faulty. Do not ride the bike this way.
+3. How to Fix and Reset:
+Secure Connection: Clean and secure the connector first.
+Replace the Sensor: If the wiring is good, the lean angle sensor has failed and must be replaced. Ensure the new one is mounted in the correct orientation.
+Reset the Code: The code will clear once the ECU receives the correct signal from a functioning sensor circuit.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 41 lean angle sensor bypass test</SearchQuery>
+</Fault>
+<Fault code="42" title="A. No normal signals are received from the speed sensor. B. Open circuit is detected in the neutral switch.">
+<AISummary>This fault code has two possible, unrelated meanings. You must diagnose which one it is based on the bike's symptoms.
+1. Understanding the Components:
+A. Speed Sensor: This sensor, usually located near the front sprocket or one of the wheels, measures the bike's speed and sends the signal to the speedometer.
+B. Neutral Switch: This switch tells the ECU when the bike is in neutral. This is important for starting the bike with the sidestand down and for activating the neutral light on the dash.
+2. How to Diagnose the Issue:
+Observe the Symptoms:
+Is the speedometer working? If your speedometer is dead and reads "0" all the time while moving, the problem is the speed sensor circuit (Case A).
+Does the neutral light work? If your speedometer works correctly, but the green neutral light on the dash does not come on when you are in neutral, the problem is the neutral switch circuit (Case B). You may also find the bike won't start with the sidestand down, even when in neutral.
+How to Investigate Case A (Speed Sensor):
+Check the sensor's electrical connector for dirt and damage.
+Make sure the sensor is clean and properly spaced from the rotating part it reads (e.g., sprocket bolts or ABS ring).
+How to Investigate Case B (Neutral Switch):
+The neutral switch is located on the engine casing, near the gear shift linkage. Check its wire and connector for damage. The wire is in an exposed location and can easily be broken.
+3. How to Fix and Reset:
+Repair or Replace: Depending on your diagnosis, you will need to clean the connection, repair the wiring, or replace the faulty sensor/switch.
+Reset the Code: The fault will clear once the ECU receives the correct signal from the repaired component.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 42 speed sensor or neutral switch fix</SearchQuery>
+</Fault>
+<Fault code="43" title="The ECU is unable to monitor the battery voltage.">
+<AISummary>This fault code means the ECU is not receiving a reliable power supply or cannot accurately sense the system voltage. This is often caused by a poor connection between the battery and the ECU.
+1. Understanding the ECU Power Supply:
+Function: The ECU needs a stable voltage supply to operate correctly. This fault indicates that the voltage it is seeing is too low, intermittent, or nonsensical.
+Symptoms: This can cause a wide variety of strange electrical problems, including a no-start condition, stalling, or other random fault codes appearing.
+2. How to Diagnose the Issue:
+Battery Terminals: This is the #1 suspect. Check that your main battery terminals are clean, free of corrosion, and very tight. A loose ground terminal is a very common cause.
+Main Fuse and ECU Connectors: Check the main system fuse for corrosion. Unplug the large multi-pin connectors at the ECU itself and check for any signs of moisture or corrosion on the pins.
+Battery Health: Have the battery itself tested. A battery with an internal fault (like a bad cell) can provide enough voltage to light up the dash but can collapse under load, causing this fault.
+3. How to Fix and Reset:
+Clean and Tighten: The most common fix is thoroughly cleaning the battery terminals and ensuring all main power and ground connections are secure.
+Replace Battery: If the battery itself is faulty, replace it.
+Reset the Code: The code will clear once the ECU is powered up with a stable, correct voltage supply.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 43 ECU battery voltage error</SearchQuery>
+</Fault>
+<Fault code="44" title="Error is detected while reading or writing on EEPROM (CO adjustment value).">
+<AISummary>This is an internal memory error within the ECU. EEPROM is a type of memory where settings, such as the CO (fuel trim) adjustments, are stored. This fault indicates a problem reading or writing to that memory. It is not caused by an external sensor or wiring.
+1. Understanding EEPROM Error:
+Function: This is the permanent memory of the ECU.
+Failure Mode: The fault indicates that the memory chip itself might be corrupted or has failed, or that another internal ECU fault is preventing access to it. It can sometimes be triggered by a severe voltage spike or drop.
+2. How to Diagnose the Issue:
+Not User Serviceable: There are no external parts to check for this specific fault code. The problem is inside the sealed ECU unit.
+Check Other Codes: Make sure this isn't a phantom code being caused by another issue (like Fault 43 - low voltage). Resolve all other fault codes first.
+3. How to Fix and Reset:
+ECU Hard Reset: As a first step, try a hard reset. Disconnect the negative terminal of the battery for at least 15 minutes. This can sometimes clear a temporary glitch. Reconnect and see if the fault returns.
+ECU Replacement: If the fault code comes back after a reset, it signifies a permanent internal failure of the ECU. The ECU will need to be repaired by a specialist or replaced.
+Resetting the Code: If the hard reset works, the code will be gone. Otherwise, it will remain until the ECU is replaced.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 44 ECU EEPROM error reset</SearchQuery>
+</Fault>
+<Fault code="46" title="Power supply to the fuel injection system is not normal.">
+<AISummary>This is a critical fault that indicates the bike's charging system is not working correctly. The voltage in the entire electrical system is abnormally low, and the bike is running purely off the battery's stored charge.
+1. Understanding the Charging System:
+Function: The alternator (stator and rotor) generates AC power, which is converted to DC power by the regulator/rectifier to run the bike and charge the battery.
+Symptoms of Failure: The bike will start and run fine, but after a while, as the battery drains, the dash lights will dim, the engine may misfire, and eventually, the bike will die completely and will not restart. This fault code is the early warning that this is happening.
+2. How to Diagnose the Issue:
+This is an URGENT fault. Do not continue to ride the bike.
+Voltage Test: This is the definitive test. You need a multimeter.
+With the engine off, measure the battery voltage. It should be ~12.5-12.8V.
+Start the engine and let it idle at around 2,000-3,000 RPM.
+Measure the battery voltage again. A healthy charging system will show a voltage of 13.5-14.5V.
+If the voltage is still in the 12V range and dropping, your bike is not charging.
+3. How to Fix and Reset:
+Identify the Failed Component: The problem is almost always a failed regulator/rectifier or a burnt-out stator. You will need to perform further electrical tests (resistance and output tests as per the service manual) to determine which component has failed.
+Check Connections: Before replacing parts, check the large connectors from the stator and the regulator/rectifier. They can sometimes corrode or melt from high resistance.
+Replace and Re-test: Replace the failed component (stator or regulator/rectifier) and repeat the voltage test to confirm the fix.
+Reset the Code: The code will clear once the system voltage returns to normal.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 46 charging system problem</SearchQuery>
+</Fault>
+<Fault code="50" title="Faulty ECU memory. (When this malfunction is detected in the ECU, the fault code number might not appear on the meter.)">
+<AISummary>This is a fatal, non-recoverable error within the Engine Control Unit (ECU). It means the ECU's internal memory or processor has failed a self-check.
+1. Understanding the Fault:
+Function: The ECU is the brain of the motorcycle.
+Failure Mode: This code indicates a complete and permanent internal hardware failure. The bike will likely not start or run at all. This is not a fixable item through standard diagnostics.
+2. How to Diagnose the Issue:
+Symptoms: The bike is completely dead, or the fuel pump won't prime, and there's no spark. The engine light will be on, but the code "50" may not even display on the meter, as the ECU may not be able to communicate properly.
+Final Confirmation: The only diagnostic step is to rule out all other possibilities. Ensure the ECU is getting proper power and ground and that all its connectors are secure. If those are good, the ECU itself is condemned.
+3. How to Fix and Reset:
+Hard Reset Attempt: As a last resort, you can try disconnecting the battery for 15-20 minutes, but it is extremely unlikely to fix a permanent hardware fault.
+ECU Replacement: The only solution is to replace the ECU. This can be a complex job as it is often linked to the bike's immobilizer system and keys, and may require programming by a dealer.
+Resetting the Code: The code will be gone when the old ECU is replaced with a functioning one.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 50 faulty ECU memory replacement</SearchQuery>
+</Fault>
+<Fault code="62" title="Muffler cooling fan temperature sensor: open or short circuit detected.">
+<AISummary>The MT-01 has a unique cooling fan for its large under-seat muffler to prevent overheating of the tail section. This fault code indicates an electrical problem with the temperature sensor that controls this fan.
+1. Understanding the Muffler Fan System:
+Function: A temperature sensor mounted on the muffler assembly monitors heat. When a certain temperature is reached, it signals the ECU to turn on the cooling fan.
+Failure Mode: This code means the ECU has detected an open or short circuit in the sensor's wiring, or the sensor itself has failed. The fan may not turn on when needed.
+2. How to Diagnose the Issue:
+Location: The sensor is physically located on the muffler assembly, under the seat/tail section.
+Connector Inspection: Trace the sensor's wire to its electrical connector. Check for damage, corrosion, or a loose connection. The high-heat environment can make connectors brittle.
+Wiring Check: Inspect the wiring for any signs of melting, chafing, or breaks.
+3. How to Fix and Reset:
+Repair Connection: If a wiring or connector issue is found, repair it.
+Replace Sensor: If the wiring is intact, the temperature sensor itself has likely failed and will need to be replaced.
+Reset the Code: The code will clear once the ECU detects a valid signal from the sensor circuit.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 62 muffler fan temperature sensor</SearchQuery>
+</Fault>
+<Fault code="63" title="Engine trouble warning light is flashing. (Abnormally high temperature is detected by muffler cooling fan temperature sensor.)">
+<AISummary>This fault code indicates that the muffler temperature sensor is reading an excessively high temperature. This can be due to the muffler genuinely overheating, or a failure in the cooling fan circuit that prevents the fan from running.
+1. Understanding the Muffler Overheat Condition:
+Causes:
+Genuine Overheating: The muffler is actually too hot.
+Fan Failure: The muffler is overheating because the cooling fan is not turning on. This is the most common cause.
+Sensor Failure: The temperature sensor has failed and is sending a false high-temperature reading to the ECU.
+2. How to Diagnose the Issue:
+Check the Fan's Power Circuit: The most common reason the fan doesn't work is a blown fuse.
+Fuses: Locate and check the 'muffler cover fan fuse' and the 'ECU fuse' in the fuse box.
+Test the Fan Manually: You can use the bike's built-in diagnostic mode to manually activate the fan (diagnostic code 51). If the fan runs during this test, you know the fan motor and its relay are working.
+Inspect the Fan Blades: Visually inspect the fan to make sure no debris is physically blocking it from spinning.
+Investigate the Sensor: If the fuses are good and the fan runs in the diagnostic mode, but you still get the code during normal riding, it's possible the sensor itself is faulty (see Fault 62).
+3. How to Fix and Reset:
+Replace Fuse: If a fuse is blown, replace it. If it blows again, there is a short circuit in the fan motor or wiring that you must find.
+Replace Fan/Relay: If the fan does not run during the diagnostic test, the fan motor or its relay has failed and needs to be replaced.
+Reset the Code: The code will clear once the muffler temperature returns to a normal range.</AISummary>
+<SearchQuery>Yamaha MT-01 fault code 63 muffler overheating fan not working</SearchQuery>
+</Fault>
+<Fault code="Er-1" title="No signals are received from the ECU.">
+<AISummary>This is a major communication failure between the instrument cluster (the meter) and the Engine Control Unit (ECU). The meter is the master component in this check, and "Er-1" means it sent a signal to the ECU but received no response at all.
+1. Understanding the Communication Link:
+Function: On startup, the dashboard and ECU perform a "handshake" to verify they are connected and working.
+Failure Mode: This error indicates a total breakdown in that communication. The bike will not start because the meter, which is part of the immobilizer system, cannot verify the ECU.
+2. How to Diagnose the Issue:
+Check Main Power: A total communication loss can be caused by the ECU not powering up at all.
+Fuses: Check the main fuse and the ignition fuse.
+ECU Connectors: Check the large multi-pin connectors on the ECU itself. Make sure they are fully seated, clean, and dry.
+Check Meter Connection: Check the electrical connector on the back of the instrument cluster.
+Ignition Switch: A faulty ignition switch can fail to send the "ON" signal to the ECU, causing this error.
+Wiring Harness: A break in the main wiring harness between the meter and the ECU is a possible, though less common, cause.
+3. How to Fix:
+Fix the Connection: The most common solution is finding and fixing a loose or corroded connector or replacing a blown fuse.
+Replace Faulty Component: If all wiring is good, the fault could be an internal failure of the ECU or the instrument cluster, though this is rare.</AISummary>
+<SearchQuery>Yamaha MT-01 error code Er-1 no communication with ECU</SearchQuery>
+</Fault>
+<Fault code="Er-2" title="No signals are received from the ECU within the specified duration.">
+<AISummary>This communication error is slightly different from Er-1. It means that while a connection between the ECU and the instrument cluster exists, the ECU's response is not being received in time. This suggests an intermittent or poor-quality connection.
+1. Understanding the Communication Timeout:
+Function: The meter expects a response from the ECU within a specific timeframe after the key is turned on.
+Failure Mode: Er-2 means this timeframe was exceeded. This often points to a single pin in a connector not making good contact, or high resistance in the circuit due to corrosion.
+2. How to Diagnose the Issue:
+Focus on Connectors: This error strongly suggests a physical connection problem.
+ECU Connectors: Disconnect the large ECU plugs, inspect every pin and socket for corrosion or any that look "pushed back" into the connector housing, and reseat them firmly.
+Meter Connector: Do the same for the connector on the back of the instrument cluster.
+Battery Voltage: A low battery can sometimes cause slow communication and trigger this fault. Ensure the battery is fully charged.
+3. How to Fix:
+Clean and Secure Connectors: The most likely fix is to use an electrical contact cleaner on the ECU and meter connectors and ensure they are plugged in securely. Applying a small amount of dielectric grease can help prevent future corrosion.
+Address Battery Issues: Charge or replace the battery if it's weak.</AISummary>
+<SearchQuery>Yamaha MT-01 error code Er-2 ECU communication timeout</SearchQuery>
+</Fault>
+<Fault code="Er-3" title="Data from the ECU cannot be received correctly.">
+<AISummary>This error indicates that the instrument cluster is receiving signals from the ECU, but the data is garbled, corrupt, or nonsensical. The communication is happening, but it's not coherent.
+1. Understanding Data Corruption:
+Function: Data is transmitted as a series of digital signals.
+Failure Mode: This error can be caused by a poor connection (similar to Er-2) or by "electrical noise" from other components interfering with the signal.
+2. How to Diagnose the Issue:
+Check Connections First: As with all Er codes, the first step is to disconnect, clean, and securely reconnect the main ECU and instrument cluster connectors.
+Check Power and Ground: Verify the battery terminals are tight and the main ground connections to the frame are clean and secure. Unstable power can corrupt data signals.
+Electrical Interference: Consider any recently added aftermarket electrical accessories, such as HID headlights, LED indicators with improper relays, or USB chargers. A poorly designed or installed accessory can introduce electrical noise into the system that disrupts communication.
+3. How to Fix:
+Clean Connections: Address any connector issues first.
+Isolate Accessories: If you have aftermarket electronics, try disconnecting them one by one to see if the error goes away. This will isolate the source of the interference.
+Check Battery Health: Ensure the battery is healthy and fully charged.</AISummary>
+<SearchQuery>Yamaha MT-01 error code Er-3 corrupt ECU data</SearchQuery>
+</Fault>
+<Fault code="Er-4" title="Non-registered data has been received from the meter.">
+<AISummary>This is a communication mismatch error, almost always related to the immobilizer system. It means the ECU has received a signal from the instrument cluster that it does not recognize, suggesting a component mismatch or a key transponder issue.
+1. Understanding the Immobilizer Handshake:
+Function: The ECU, instrument cluster, and the transponder chip in your key are all coded to each other. On startup, they perform a three-way handshake to verify they all belong to the same motorcycle.
+Failure Mode: Er-4 indicates this handshake has failed because the meter's data is "non-registered" with the ECU.
+2. How to Diagnose the Issue:
+Have you changed parts? This error will almost certainly appear if you have replaced the ECU or the instrument cluster with a unit from another bike without having them professionally paired.
+Key Issues:
+Try all of your keys, especially the red master key. If the bike starts with the red key but not the black keys, the black keys may need to be re-registered.
+A damaged transponder chip inside the key can also cause this.
+Immobilizer Antenna: There is an antenna ring around the ignition switch that reads the key chip. Check that its connector is secure.
+Interference: Having other transponder keys (like another bike key or a car key with a chip) on the same keyring can sometimes interfere with the signal. Try starting the bike with only the MT-01 key near the ignition.
+3. How to Fix:
+Use the Correct Key: Ensure you are using a properly registered key and there is no interference.
+Component Pairing: If you have replaced the ECU or meter, they will need to be paired by a Yamaha dealer or a specialist with the correct equipment.
+Check Antenna: Ensure the immobilizer antenna is properly connected.</AISummary>
+<SearchQuery>Yamaha MT-01 error code Er-4 meter ECU mismatch</SearchQuery>
+</Fault>
 </AiSummaries>
