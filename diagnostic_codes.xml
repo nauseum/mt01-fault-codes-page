@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagnosticData>
+    <faults>
+        <fault code="12">
+            <symptom>No normal signals are received from the crankshaft position sensor.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective crankshaft position sensor. - Malfunction in pickup rotor. - Malfunction in ECU. - Improperly installed sensor.</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+            <troubleshootingSteps>
+                <step>
+                    <order>1</order>
+                    <item>Installed condition of crankshaft position sensor.</item>
+                    <check>Check for looseness or pinching.</check>
+                    <reinstatement>Cranking the engine.</reinstatement>
+                </step>
+                <step>
+                    <order>2</order>
+                    <item>Connections: Crankshaft position sensor coupler, Main wire harness ECU coupler</item>
+                    <check>Check the coupler for any pins that may be pulled out. Check the locking condition of the coupler. If there is a malfunction, repair it and connect the coupler securely.</check>
+                    <reinstatement>Cranking the engine.</reinstatement>
+                </step>
+                <step>
+                    <order>3</order>
+                    <item>Open or short circuit in wire harness.</item>
+                    <check>Repair or replace if there is an open or short circuit. Between the crankshaft position sensor coupler and ECU coupler (gray–gray)(black/blue–black/blue)</check>
+                    <reinstatement>Cranking the engine.</reinstatement>
+                </step>
+                <step>
+                    <order>4</order>
+                    <item>Defective crankshaft position sensor.</item>
+                    <check>Replace if defective. Refer to “CHECKING THE CRANKSHAFT POSITION SENSOR” on page 7-100.</check>
+                    <reinstatement>Cranking the engine.</reinstatement>
+                </step>
+            </troubleshootingSteps>
+        </fault>
+        <fault code="13">
+            <symptom>Cylinder-#1 intake air pressure sensor: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective cylinder-#1 intake air pressure sensor. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>03</diagnosticCode>
+        </fault>
+        <fault code="14">
+            <symptom>Cylinder-#1 intake air pressure sensor: hose system malfunction (clogged or detached hose).</symptom>
+            <probableCause>- Cylinder-#1 intake air pressure sensor hose is detached, clogged, kinked, or pinched. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>03</diagnosticCode>
+        </fault>
+        <fault code="15">
+            <symptom>Throttle position sensor: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire sub lead. - Open or short circuit in wire harness. - Defective throttle position sensor. - Malfunction in ECU. - Improperly installed throttle position sensor.</probableCause>
+            <diagnosticCode>01</diagnosticCode>
+        </fault>
+        <fault code="17">
+            <symptom>EXUP servo motor circuit: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective EXUP servo motor (potentiometer circuit).</probableCause>
+            <diagnosticCode>53</diagnosticCode>
+        </fault>
+        <fault code="18">
+            <symptom>EXUP servo motor is stuck.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Stuck EXUP servo motor (mechanism). - Stuck EXUP servo motor (motor).</probableCause>
+            <diagnosticCode>53</diagnosticCode>
+        </fault>
+        <fault code="19">
+            <symptom>A break or disconnection of the blue/yellow lead of the ECU is detected.</symptom>
+            <probableCause>- Open circuit in wire harness (ECU coupler). - Malfunction in ECU.</probableCause>
+            <diagnosticCode>20</diagnosticCode>
+        </fault>
+        <fault code="22">
+            <symptom>Air temperature sensor: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective air temperature sensor. - Malfunction in ECU. - Improperly installed air temperature sensor.</probableCause>
+            <diagnosticCode>05</diagnosticCode>
+        </fault>
+        <fault code="24">
+            <symptom>No normal signal is received from the O2 sensor.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective O2 sensor. - Malfunction in ECU. - Improperly installed sensor.</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+        </fault>
+        <fault code="25">
+            <symptom>Cylinder-#2 intake air pressure sensor: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective cylinder-#2 intake air pressure sensor. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>04</diagnosticCode>
+        </fault>
+        <fault code="26">
+            <symptom>Cylinder-#2 intake air pressure sensor: hose system malfunction (clogged or detached hose).</symptom>
+            <probableCause>- Cylinder-#2 intake air pressure sensor hose is detached, clogged, kinked, or pinched. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>04</diagnosticCode>
+        </fault>
+        <fault code="28">
+            <symptom>Engine temperature sensor: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire sub lead. - Open or short circuit in wire harness. - Defective engine temperature sensor. - Malfunction in ECU. - Improperly installed sensor.</probableCause>
+            <diagnosticCode>11</diagnosticCode>
+        </fault>
+        <fault code="29">
+            <symptom>Decompression solenoid (thermistor): open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective decompression solenoid (thermistor). - Malfunction in ECU. - Improperly installed sensor.</probableCause>
+            <diagnosticCode>55</diagnosticCode>
+        </fault>
+        <fault code="30">
+            <symptom>The vehicle has overturned.</symptom>
+            <probableCause>- Overturned. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>08</diagnosticCode>
+        </fault>
+        <fault code="33">
+            <symptom>Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil.</symptom>
+            <probableCause>- Open or short circuit in wire sub lead. - Open or short circuit in wire harness. - Malfunction in cylinder-#1 left or right ignition coil. - Malfunction in ECU. - Malfunction in a component of ignition cut-off circuit system.</probableCause>
+            <diagnosticCode>30, 32</diagnosticCode>
+        </fault>
+        <fault code="34">
+            <symptom>Malfunction detected in the primary wire of the cylinder-#2 left ignition coil.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Malfunction in cylinder-#2 left ignition coil. - Malfunction in ECU. - Malfunction in a component of ignition cut-off circuit system.</probableCause>
+            <diagnosticCode>31</diagnosticCode>
+        </fault>
+        <fault code="35">
+            <symptom>Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil.</symptom>
+            <probableCause>- Open or short circuit in wire sub lead. - Open or short circuit in wire harness. - Malfunction in cylinder-#1 left or right ignition coil. - Malfunction in ECU. - Malfunction in a component of ignition cut-off circuit system.</probableCause>
+            <diagnosticCode>30, 32</diagnosticCode>
+        </fault>
+        <fault code="36">
+            <symptom>Malfunction detected in the primary wire of the cylinder-#2 right ignition coil.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Malfunction in cylinder-#2 right ignition coil. - Malfunction in ECU. - Malfunction in a component of ignition cut-off circuit system.</probableCause>
+            <diagnosticCode>33</diagnosticCode>
+        </fault>
+        <fault code="37">
+            <symptom>Engine speed is high when the engine is idling.</symptom>
+            <probableCause>- Open circuit in wire harness. - Malfunction in throttle body. - Malfunction in throttle cables. - ISC valve is stuck fully open. - Malfunction in ECU. - ECU fuse is blown.</probableCause>
+            <diagnosticCode>54</diagnosticCode>
+        </fault>
+        <fault code="38">
+            <symptom>Decompression solenoid: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective decompression solenoid. - Malfunction in ECU. - Improperly installed sensor.</probableCause>
+            <diagnosticCode>55</diagnosticCode>
+        </fault>
+        <fault code="41">
+            <symptom>Lean angle cut-off switch: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective lean angle cut-off switch. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>08</diagnosticCode>
+        </fault>
+        <fault code="42">
+            <symptom>A. No normal signals are received from the speed sensor. B. Open circuit is detected in the neutral switch.</symptom>
+            <probableCause>- Open circuit in wire harness. - Defective speed sensor/neutral switch. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>A:07, B:21</diagnosticCode>
+        </fault>
+        <fault code="43">
+            <symptom>The ECU is unable to monitor the battery voltage (an open or short circuit in the line to the ECU).</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>09</diagnosticCode>
+        </fault>
+        <fault code="44">
+            <symptom>Error is detected while reading or writing on EEPROM (CO adjustment value).</symptom>
+            <probableCause>- Malfunction in ECU. (The CO adjustment value is not properly written on or read from the internal memory).</probableCause>
+            <diagnosticCode>60</diagnosticCode>
+        </fault>
+        <fault code="46">
+            <symptom>Power supply to the fuel injection system is not normal.</symptom>
+            <probableCause>Malfunction in the charging system. Refer to “CHARGING SYSTEM” on page 7-11.</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+        </fault>
+        <fault code="50">
+            <symptom>Faulty ECU memory. (When this malfunction is detected in the ECU, the fault code number might not appear on the meter.)</symptom>
+            <probableCause>- Malfunction in ECU. (The program and data are not properly written on or read from the internal memory.)</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+        </fault>
+        <fault code="62">
+            <symptom>Muffler cooling fan temperature sensor: open or short circuit detected.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Defective muffler cooling fan temperature sensor. - Malfunction in ECU. - Improperly installed sensor.</probableCause>
+            <diagnosticCode>12</diagnosticCode>
+        </fault>
+        <fault code="63">
+            <symptom>Engine trouble warning light is flashing. (Abnormally high temperature is detected by muffler cooling fan temperature sensor.)</symptom>
+            <probableCause>- Muffler cover fan fuse or ECU fuse is blown. - Defective muffler cooling fan temperature sensor or motor relay. - Deformed parts near sensor.</probableCause>
+            <diagnosticCode>12, 51, 63</diagnosticCode>
+        </fault>
+        <fault code="Er-1">
+            <symptom>No signals are received from the ECU.</symptom>
+            <probableCause>- Open or short circuit in wire harness. - Malfunction in meter. - Malfunction in ECU. - Defective wire connection of the ECU coupler.</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+        </fault>
+        <fault code="Er-2">
+            <symptom>No signals are received from the ECU within the specified duration.</symptom>
+            <probableCause>- Improper connection in wire harness. - Malfunction in meter. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+        </fault>
+        <fault code="Er-3">
+            <symptom>Data from the ECU cannot be received correctly.</symptom>
+            <probableCause>- Improper connection in wire harness. - Malfunction in meter. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+        </fault>
+        <fault code="Er-4">
+            <symptom>Non-registered data has been received from the meter.</symptom>
+            <probableCause>- Improper connection in wire harness. - Malfunction in meter. - Malfunction in ECU.</probableCause>
+            <diagnosticCode>—</diagnosticCode>
+        </fault>
+    </faults>
+    <sensorOperations>
+        <sensor code="01">
+            <item>Throttle angle</item>
+            <meterDisplay>Fully closed: 15–20, Fully opened: 95–100</meterDisplay>
+            <checkingMethod>Check with throttle fully closed/opened.</checkingMethod>
+        </sensor>
+        <sensor code="03">
+            <item>Pressure difference (atmospheric and cylinder-#1 intake)</item>
+            <meterDisplay>Displays the cylinder-#1 intake air pressure.</meterDisplay>
+            <checkingMethod>Set engine stop switch to "run", then operate throttle while pushing start switch.</checkingMethod>
+        </sensor>
+         <sensor code="04">
+            <item>Pressure difference (atmospheric and cylinder-#2 intake)</item>
+            <meterDisplay>Displays the cylinder-#2 intake air pressure.</meterDisplay>
+            <checkingMethod>Set engine stop switch to "run", then operate throttle while pushing start switch.</checkingMethod>
+        </sensor>
+        <sensor code="05">
+            <item>Air temperature</item>
+            <meterDisplay>Displays the air temperature.</meterDisplay>
+            <checkingMethod>Compare the actually measured air temperature with the meter display value.</checkingMethod>
+        </sensor>
+        <sensor code="07">
+            <item>Vehicle speed pulse</item>
+            <meterDisplay>0-999</meterDisplay>
+            <checkingMethod>Check that the number increases when the rear wheel is rotated. The number is cumulative and does not reset each time the wheel is stopped.</checkingMethod>
+        </sensor>
+        <sensor code="08">
+            <item>Lean angle cut-off switch</item>
+            <meterDisplay>Upright: 0.4-1.4, Overturned: 3.7-4.4</meterDisplay>
+            <checkingMethod>Remove the lean angle cut-off switch and incline it more than 65 degrees.</checkingMethod>
+        </sensor>
+        <sensor code="09">
+            <item>Fuel system voltage (battery voltage)</item>
+            <meterDisplay>Approximately 12.0</meterDisplay>
+            <checkingMethod>Set the engine stop switch to "run", and then compare with the actually measured battery voltage. (If the battery voltage is lower, perform recharging.)</checkingMethod>
+        </sensor>
+        <sensor code="11">
+            <item>Engine temperature</item>
+            <meterDisplay>Displays the engine temperature.</meterDisplay>
+            <checkingMethod>Compare the actually measured engine temperature with the meter display value.</checkingMethod>
+        </sensor>
+        <sensor code="12">
+            <item>Muffler cooling fan temperature</item>
+            <meterDisplay>Displays the muffler cooling fan temperature.</meterDisplay>
+            <checkingMethod>Compare the actually measured muffler cooling fan temperature with the meter display value.</checkingMethod>
+        </sensor>
+        <sensor code="20">
+            <item>Sidestand switch</item>
+            <meterDisplay>Stand retracted: ON, Stand extended: OFF</meterDisplay>
+            <checkingMethod>Set ON/OFF the Sidestand switch. (with the transmission in gear.)</checkingMethod>
+        </sensor>
+        <sensor code="21">
+            <item>Neutral switch</item>
+            <meterDisplay>Neutral: ON, In gear: OFF</meterDisplay>
+            <checkingMethod>Shift the transmission.</checkingMethod>
+        </sensor>
+        <sensor code="53">
+            <item>EXUP servo motor</item>
+            <meterDisplay>Displays the operating angle. Engine trouble warning light comes on twice: once when the EXUP valve is closing and once when it is opening.</meterDisplay>
+            <checkingMethod>—</checkingMethod>
+        </sensor>
+        <sensor code="60">
+            <item>EEPROM fault code display</item>
+            <meterDisplay>No history: 00. History exists: 01 or 02 (Cylinder fault code)</meterDisplay>
+            <checkingMethod>—</checkingMethod>
+        </sensor>
+        <sensor code="61">
+            <item>Malfunction history code display</item>
+            <meterDisplay>No history: 00. History exists: Fault codes 12-63</meterDisplay>
+            <checkingMethod>—</checkingMethod>
+        </sensor>
+        <sensor code="62">
+            <item>Malfunction history code erasure</item>
+            <meterDisplay>No history: 0. History exists: Up to 28 fault codes</meterDisplay>
+            <checkingMethod>To erase the history, set the engine stop switch to "run".</checkingMethod>
+        </sensor>
+    </sensorOperations>
+    <actuatorOperations>
+        <actuator code="30">
+            <item>Cylinder-#1 left or right ignition coil</item>
+            <actuation>Actuates for five times every second. Illuminates warning light.</actuation>
+            <checkingMethod>Check the spark five times. Connect an ignition checker.</checkingMethod>
+        </actuator>
+        <actuator code="31">
+            <item>Cylinder-#2 left ignition coil</item>
+            <actuation>Actuates for five times every second. Illuminates warning light.</actuation>
+            <checkingMethod>Check the spark five times. Connect an ignition checker.</checkingMethod>
+        </actuator>
+        <actuator code="32">
+            <item>Cylinder-#1 left or right ignition coil</item>
+            <actuation>Actuates for five times every second. Illuminates warning light.</actuation>
+            <checkingMethod>Check the spark five times. Connect an ignition checker.</checkingMethod>
+        </actuator>
+        <actuator code="33">
+            <item>Cylinder-#2 right ignition coil</item>
+            <actuation>Actuates for five times every second. Illuminates warning light.</actuation>
+            <checkingMethod>Check the spark five times. Connect an ignition checker.</checkingMethod>
+        </actuator>
+        <actuator code="36">
+            <item>Injector #1</item>
+            <actuation>Actuates for five times every second. Illuminates warning light.</actuation>
+            <checkingMethod>Check the operating sound of the injector #1 five times.</checkingMethod>
+        </actuator>
+        <actuator code="37">
+            <item>Injector #2</item>
+            <actuation>Actuates for five times every second. Illuminates warning light.</actuation>
+            <checkingMethod>Check the operating sound of the injector #2 five times.</checkingMethod>
+        </actuator>
+        <actuator code="49">
+            <item>Intake solenoid</item>
+            <actuation>Actuates for five times every second. Illuminates warning light.</actuation>
+            <checkingMethod>Check the operating sound of the intake solenoid five times.</checkingMethod>
+        </actuator>
+        <actuator code="50">
+            <item>Fuel pump relay</item>
+            <actuation>Actuates the fuel pump relay for five times every second. Illuminates the engine trouble warning light.</actuation>
+            <checkingMethod>Check the operating sound of the fuel pump relay five times.</checkingMethod>
+        </actuator>
+        <actuator code="51">
+            <item>Muffler cooling fan motor relay</item>
+            <actuation>Actuates the muffler cooling fan motor relay for five cycles of five seconds. Illuminates the engine trouble warning light.</actuation>
+            <checkingMethod>Check the operating sound of the muffler cooling fan motor relay five times.</checkingMethod>
+        </actuator>
+        <actuator code="52">
+            <item>Headlight relay</item>
+            <actuation>Actuates the headlight relay for five cycles of five seconds. Illuminates the engine trouble warning light.</actuation>
+            <checkingMethod>Check the operating sound of the headlight relay five times.</checkingMethod>
+        </actuator>
+        <actuator code="54">
+            <item>ISC valve</item>
+            <actuation>Actuates and fully closes the ISC valve, then opens it to the standby opening position when the engine is started. Illuminates the engine trouble warning light.</actuation>
+            <checkingMethod>The ISC unit vibrates when the ISC valve operates.</checkingMethod>
+        </actuator>
+        <actuator code="55">
+            <item>Decompression solenoid</item>
+            <actuation>Actuates the decompression solenoid for five cycles of five seconds. Illuminates the engine trouble warning light.</actuation>
+            <checkingMethod>Check the operating sound of the decompression solenoid five times. NOTE: Disconnect the starter motor lead before performing this procedure.</checkingMethod>
+        </actuator>
+    </actuatorOperations>
+</diagnosticData>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha MT-01 Diagnostic Codes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yamaha MT-01 Diagnostic Codes</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by fault code...">
+            <button id="searchButton">Search</button>
+            <button id="diagnosticModeButton">Diagnostic Mode</button>
+        </div>
+        <div class="fault-code-index">
+            <h2>Fault Code Index</h2>
+            <ul id="faultCodeList"></ul>
+        </div>
+    </div>
+
+    <!-- Fault Details Modal -->
+    <div id="faultModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Diagnostic Instructions Modal -->
+    <div id="diagnosticModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="diagnostic-modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
