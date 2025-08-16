@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Search and index elements
-    const searchButton = document.getElementById("searchButton");
     const searchInput = document.getElementById("searchInput");
     const faultCodeList = document.getElementById("faultCodeList");
     
@@ -137,19 +136,68 @@ document.addEventListener("DOMContentLoaded", () => {
         diagnosticModal.style.display = "block";
     }
 
+    function filterFaultList() {
+        if (!xmlData || !summaryXmlData) return; // Exit if data isn't loaded
+
+        const searchTerms = searchInput.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+
+        if (searchTerms.length === 0) {
+            displayFaultCodeIndex(xmlData); // Reset to full list if search is empty
+            return;
+        }
+
+        const allFaults = xmlData.getElementsByTagName("fault");
+        let scoredResults = [];
+
+        for (const fault of allFaults) {
+            const faultCode = fault.getAttribute("code");
+            const summaryFault = summaryXmlData.querySelector(`Fault[code="${faultCode}"]`);
+            
+            const symptom = fault.getElementsByTagName("symptom")[0].textContent.toLowerCase();
+            const probableCause = fault.getElementsByTagName("probableCause")[0].textContent.toLowerCase();
+            const aiSummary = summaryFault ? summaryFault.querySelector("AISummary").textContent.toLowerCase() : "";
+
+            const searchableContent = `${faultCode} ${symptom} ${probableCause} ${aiSummary}`;
+            
+            let matchedWords = 0;
+            searchTerms.forEach(term => {
+                if (searchableContent.includes(term)) {
+                    matchedWords++;
+                }
+            });
+
+            if (matchedWords > 0) {
+                let score = matchedWords;
+                // If all terms match, give a large score bonus to prioritize it
+                if (matchedWords === searchTerms.length) {
+                    score += 100;
+                }
+                scoredResults.push({ code: faultCode, symptom: fault.getElementsByTagName("symptom")[0].textContent, score: score });
+            }
+        }
+
+        // Sort results by score, descending
+        scoredResults.sort((a, b) => b.score - a.score);
+
+        // Re-render the list based on sorted results
+        faultCodeList.innerHTML = '';
+        if (scoredResults.length > 0) {
+            scoredResults.forEach(result => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `Fault ${result.code}: ${result.symptom}`;
+                listItem.dataset.faultCode = result.code;
+                listItem.addEventListener("click", () => showFaultDetails(result.code));
+                faultCodeList.appendChild(listItem);
+            });
+        } else {
+            faultCodeList.innerHTML = '<li>No matching fault codes found.</li>';
+        }
+    }
+
     // --- Event Listeners ---
-    searchButton.addEventListener("click", () => {
-        const searchTerm = searchInput.value.trim();
-        if (searchTerm) {
-            showFaultDetails(searchTerm);
-        }
-    });
     
-    searchInput.addEventListener("keyup", (event) => {
-        if (event.key === "Enter") {
-            searchButton.click();
-        }
-    });
+    // Live search filtering as the user types
+    searchInput.addEventListener("input", filterFaultList);
 
     // Listeners for Fault Details Modal
     faultCloseButton.addEventListener("click", () => faultModal.style.display = "none");
@@ -165,7 +213,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Listener for new Manual Button
     manualButton.addEventListener("click", () => {
-        // Open the PDF in a new tab, allowing the browser's viewer to handle it.
         window.open('Manual2005.pdf', '_blank');
     });
 
