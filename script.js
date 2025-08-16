@@ -77,13 +77,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 detailsHTML += `</ol></div>`;
             }
 
-            // Find and append the AI Summary
+            // Find and append the AI Summary and Search Button
             const summaryFault = summaryXmlData.querySelector(`Fault[code="${faultCode}"]`);
             if (summaryFault) {
                 const aiSummary = summaryFault.querySelector("AISummary").textContent.trim().replace(/(\r\n|\n|\r)/gm, "<br>");
-                detailsHTML += `<h4>User Summary Help</h4><div class="user-summary">${aiSummary}</div>`;
+                const searchQuery = summaryFault.querySelector("SearchQuery")?.textContent;
+                let searchButtonHTML = '';
+                if (searchQuery) {
+                    const searchURL = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+                    searchButtonHTML = `<button class="search-online-button" onclick="window.open('${searchURL}', '_blank')">Search Online</button>`;
+                }
+                detailsHTML += `<h4>User Summary Help</h4><div class="user-summary">${aiSummary}${searchButtonHTML}</div>`;
             }
-
 
             modalBody.innerHTML = detailsHTML;
             faultModal.style.display = "block";
