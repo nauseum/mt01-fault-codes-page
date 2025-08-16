@@ -212,6 +212,55 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // --- New Functionality for Android APK Toast ---
+
+    function showAndroidApkToast() {
+        // Check if the user agent string indicates an Android device
+        const isAndroid = /android/i.test(navigator.userAgent);
+
+        if (isAndroid) {
+            // Create the toast element
+            const toast = document.createElement('div');
+            toast.className = 'toast-notification';
+            toast.textContent = 'Click for Android App';
+            document.body.appendChild(toast);
+
+            // Function to remove the toast with a fade-out effect
+            const removeToast = () => {
+                if (document.body.contains(toast)) {
+                    toast.style.opacity = '0';
+                    setTimeout(() => {
+                        document.body.removeChild(toast);
+                    }, 500); // Wait for the transition to finish
+                }
+            };
+
+            // Add a click listener to the toast to trigger the download
+            const downloadApk = () => {
+                const link = document.createElement('a');
+                // *** THIS IS THE UPDATED LINE ***
+                link.href = 'https://github.com/nauseum/mt01-fault-codes-page/raw/refs/heads/main/MT01_Codes.apk';
+                link.download = 'MT01_Codes.apk'; // This attribute suggests a filename
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                removeToast(); // Remove toast after clicking
+                clearTimeout(toastTimeout); // Prevent the timeout from trying to remove it again
+            };
+
+            toast.addEventListener('click', downloadApk);
+
+            // Set a timeout to automatically remove the toast after 20 seconds
+            const toastTimeout = setTimeout(removeToast, 20000);
+
+            // Trigger the fade-in animation after the element is added to the DOM
+            setTimeout(() => {
+                toast.style.opacity = '1';
+            }, 100);
+        }
+    }
+
+
     // --- Event Listeners ---
     
     searchInput.addEventListener("input", filterFaultList);
@@ -237,4 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
             diagnosticModal.style.display = "none";
         }
     });
+
+    // --- Initialize Android Toast ---
+    showAndroidApkToast();
 });
