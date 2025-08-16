@@ -1,0 +1,355 @@
+<?xml version="1.0" ?>
+<AiSummaries>
+  <Fault code="12" title="No normal signals are received from the crankshaft position sensor.">
+    <AISummary>Fault code 12 indicates: No normal signals are received from the crankshaft position sensor. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective crankshaft position sensor.  Malfunction in pickup rotor.  Malfunction in ECU.  Improperly installed sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="13" title="Cylinder-#1 intake air pressure sensor: open or short circuit detected.">
+    <AISummary>Fault code 13 indicates: Cylinder-#1 intake air pressure sensor: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective cylinder#1 intake air pressure sensor.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="14" title="Cylinder-#1 intake air pressure sensor: hose system malfunction (clogged or detached hose).">
+    <AISummary>Fault code 14 indicates: Cylinder-#1 intake air pressure sensor: hose system malfunction (clogged or detached hose). In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Cylinder#1 intake air pressure sensor hose is detached, clogged, kinked, or pinched.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="15" title="Throttle position sensor: open or short circuit detected.">
+    <AISummary>Fault code 15 indicates: Throttle position sensor: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire sub lead.  Open or short circuit in wire harness.  Defective throttle position sensor.  Malfunction in ECU.  Improperly installed throttle position sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="17" title="EXUP servo motor circuit: open or short circuit detected.">
+    <AISummary>Fault code 17 indicates: EXUP servo motor circuit: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective EXUP servo motor (potentiometer circuit). 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="18" title="EXUP servo motor is stuck.">
+    <AISummary>Fault code 18 indicates: EXUP servo motor is stuck. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Stuck EXUP servo motor (mechanism).  Stuck EXUP servo motor (motor). 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="19" title="A break or disconnection of the blue/yellow lead of the ECU is detected.">
+    <AISummary>Fault code 19 indicates: A break or disconnection of the blue/yellow lead of the ECU is detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open circuit in wire harness (ECU coupler).  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="22" title="Air temperature sensor: open or short circuit detected.">
+    <AISummary>Fault code 22 indicates: Air temperature sensor: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective air temperature sensor.  Malfunction in ECU.  Improperly installed air temperature sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="24" title="No normal signal is received from the O2 sensor.">
+    <AISummary>Fault code 24 indicates: No normal signal is received from the O2 sensor. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective O2 sensor.  Malfunction in ECU.  Improperly installed sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="25" title="Cylinder-#2 intake air pressure sensor: open or short circuit detected.">
+    <AISummary>Fault code 25 indicates: Cylinder-#2 intake air pressure sensor: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective cylinder#2 intake air pressure sensor.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="26" title="Cylinder-#2 intake air pressure sensor: hose system malfunction (clogged or detached hose).">
+    <AISummary>Fault code 26 indicates: Cylinder-#2 intake air pressure sensor: hose system malfunction (clogged or detached hose). In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Cylinder#2 intake air pressure sensor hose is detached, clogged, kinked, or pinched.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="28" title="Engine temperature sensor: open or short circuit detected.">
+    <AISummary>Fault code 28 indicates: Engine temperature sensor: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire sub lead.  Open or short circuit in wire harness.  Defective engine temperature sensor.  Malfunction in ECU.  Improperly installed sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="29" title="Decompression solenoid (thermistor): open or short circuit detected.">
+    <AISummary>Fault code 29 indicates: Decompression solenoid (thermistor): open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective decompression solenoid (thermistor).  Malfunction in ECU.  Improperly installed sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="30" title="The vehicle has overturned.">
+    <AISummary>Fault code 30 indicates: The vehicle has overturned. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Overturned.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="33" title="Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil.">
+    <AISummary>Fault code 33 indicates: Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire sub lead.  Open or short circuit in wire harness.  Malfunction in cylinder#1 left or right ignition coil.  Malfunction in ECU.  Malfunction in a component of ignition cutoff circuit system. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="34" title="Malfunction detected in the primary wire of the cylinder-#2 left ignition coil.">
+    <AISummary>Fault code 34 indicates: Malfunction detected in the primary wire of the cylinder-#2 left ignition coil. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Malfunction in cylinder#2 left ignition coil.  Malfunction in ECU.  Malfunction in a component of ignition cutoff circuit system. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="35" title="Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil.">
+    <AISummary>Fault code 35 indicates: Malfunction detected in the primary wire of the cylinder-#1 left or right ignition coil. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire sub lead.  Open or short circuit in wire harness.  Malfunction in cylinder#1 left or right ignition coil.  Malfunction in ECU.  Malfunction in a component of ignition cutoff circuit system. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="36" title="Malfunction detected in the primary wire of the cylinder-#2 right ignition coil.">
+    <AISummary>Fault code 36 indicates: Malfunction detected in the primary wire of the cylinder-#2 right ignition coil. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Malfunction in cylinder#2 right ignition coil.  Malfunction in ECU.  Malfunction in a component of ignition cutoff circuit system. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="37" title="Engine speed is high when the engine is idling.">
+    <AISummary>Fault code 37 indicates: Engine speed is high when the engine is idling. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open circuit in wire harness.  Malfunction in throttle body.  Malfunction in throttle cables.  ISC valve is stuck fully open.  Malfunction in ECU.  ECU fuse is blown. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="38" title="Decompression solenoid: open or short circuit detected.">
+    <AISummary>Fault code 38 indicates: Decompression solenoid: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective decompression solenoid.  Malfunction in ECU.  Improperly installed sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="41" title="Lean angle cut-off switch: open or short circuit detected.">
+    <AISummary>Fault code 41 indicates: Lean angle cut-off switch: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective lean angle cutoff switch.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="42" title="A. No normal signals are received from the speed sensor. B. Open circuit is detected in the neutral switch.">
+    <AISummary>Fault code 42 indicates: A. No normal signals are received from the speed sensor. B. Open circuit is detected in the neutral switch. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open circuit in wire harness.  Defective speed sensor/neutral switch.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="43" title="The ECU is unable to monitor the battery voltage (an open or short circuit in the line to the ECU).">
+    <AISummary>Fault code 43 indicates: The ECU is unable to monitor the battery voltage (an open or short circuit in the line to the ECU). In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="44" title="Error is detected while reading or writing on EEPROM (CO adjustment value).">
+    <AISummary>Fault code 44 indicates: Error is detected while reading or writing on EEPROM (CO adjustment value). In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Malfunction in ECU. (The CO adjustment value is not properly written on or read from the internal memory). 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="46" title="Power supply to the fuel injection system is not normal.">
+    <AISummary>Fault code 46 indicates: Power supply to the fuel injection system is not normal. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Malfunction in the charging system. Refer to “CHARGING SYSTEM” on page 711. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="50" title="Faulty ECU memory. (When this malfunction is detected in the ECU, the fault code number might not appear on the meter.)">
+    <AISummary>Fault code 50 indicates: Faulty ECU memory. (When this malfunction is detected in the ECU, the fault code number might not appear on the meter.) In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Malfunction in ECU. (The program and data are not properly written on or read from the internal memory.) 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="62" title="Muffler cooling fan temperature sensor: open or short circuit detected.">
+    <AISummary>Fault code 62 indicates: Muffler cooling fan temperature sensor: open or short circuit detected. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Defective muffler cooling fan temperature sensor.  Malfunction in ECU.  Improperly installed sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="63" title="Engine trouble warning light is flashing. (Abnormally high temperature is detected by muffler cooling fan temperature sensor.)">
+    <AISummary>Fault code 63 indicates: Engine trouble warning light is flashing. (Abnormally high temperature is detected by muffler cooling fan temperature sensor.) In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Muffler cover fan fuse or ECU fuse is blown.  Defective muffler cooling fan temperature sensor or motor relay.  Deformed parts near sensor. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="Er-1" title="No signals are received from the ECU.">
+    <AISummary>Fault code Er-1 indicates: No signals are received from the ECU. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Open or short circuit in wire harness.  Malfunction in meter.  Malfunction in ECU.  Defective wire connection of the ECU coupler. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="Er-2" title="No signals are received from the ECU within the specified duration.">
+    <AISummary>Fault code Er-2 indicates: No signals are received from the ECU within the specified duration. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Improper connection in wire harness.  Malfunction in meter.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="Er-3" title="Data from the ECU cannot be received correctly.">
+    <AISummary>Fault code Er-3 indicates: Data from the ECU cannot be received correctly. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Improper connection in wire harness.  Malfunction in meter.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+  <Fault code="Er-4" title="Non-registered data has been received from the meter.">
+    <AISummary>Fault code Er-4 indicates: Non-registered data has been received from the meter. In simple terms, this means that one of the bike's systems is not sending the expected signal or is reporting abnormal values. Likely reasons include: Improper connection in wire harness.  Malfunction in meter.  Malfunction in ECU. 
+
+What to try:
+- Check for loose, dirty, or corroded electrical connections.
+- Inspect wiring harnesses for breaks, pinches, or exposed wires.
+- Ensure the component mentioned is properly installed and clean.
+- If the problem persists after basic checks, replacing the faulty part may be necessary.
+
+This issue can often be resolved with simple inspection and cleaning, avoiding complex repairs.</AISummary>
+  </Fault>
+</AiSummaries>

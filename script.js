@@ -16,15 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const diagnosticCloseButton = diagnosticModal.querySelector(".close-button");
 
     let xmlData;
+    let summaryXmlData;
 
-    // Fetch and parse the XML data
-    fetch("diagnostic_codes.xml")
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            xmlData = parser.parseFromString(data, "application/xml");
-            displayFaultCodeIndex(xmlData);
-        });
+    // Fetch and parse both XML data files
+    Promise.all([
+        fetch("diagnostic_codes.xml").then(response => response.text()),
+        fetch("Summary.xml").then(response => response.text())
+    ]).then(([diagText, summaryText]) => {
+        const parser = new DOMParser();
+        xmlData = parser.parseFromString(diagText, "application/xml");
+        summaryXmlData = parser.parseFromString(summaryText, "application/xml");
+        displayFaultCodeIndex(xmlData);
+    }).catch(error => {
+        console.error("Error fetching XML data:", error);
+        faultCodeList.innerHTML = "<li>Error loading diagnostic data. Please check the console.</li>";
+    });
 
     function displayFaultCodeIndex(xml) {
         faultCodeList.innerHTML = '';
@@ -70,6 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 detailsHTML += `</ol></div>`;
             }
+
+            // Find and append the AI Summary
+            const summaryFault = summaryXmlData.querySelector(`Fault[code="${faultCode}"]`);
+            if (summaryFault) {
+                const aiSummary = summaryFault.querySelector("AISummary").textContent.trim().replace(/(\r\n|\n|\r)/gm, "<br>");
+                detailsHTML += `<h4>User Summary Help</h4><div class="user-summary">${aiSummary}</div>`;
+            }
+
 
             modalBody.innerHTML = detailsHTML;
             faultModal.style.display = "block";
