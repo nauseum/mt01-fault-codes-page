@@ -137,17 +137,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function filterFaultList() {
-        if (!xmlData || !summaryXmlData) return; // Exit if data isn't loaded
+        if (!xmlData || !summaryXmlData) return;
 
         const searchTerms = searchInput.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
 
         if (searchTerms.length === 0) {
-            displayFaultCodeIndex(xmlData); // Reset to full list if search is empty
+            displayFaultCodeIndex(xmlData);
             return;
         }
 
         const allFaults = xmlData.getElementsByTagName("fault");
         let scoredResults = [];
+
+        const escapeRegExp = (string) => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
         for (const fault of allFaults) {
             const faultCode = fault.getAttribute("code");
@@ -156,35 +158,51 @@ document.addEventListener("DOMContentLoaded", () => {
             const symptom = fault.getElementsByTagName("symptom")[0].textContent.toLowerCase();
             const probableCause = fault.getElementsByTagName("probableCause")[0].textContent.toLowerCase();
             const aiSummary = summaryFault ? summaryFault.querySelector("AISummary").textContent.toLowerCase() : "";
-
             const searchableContent = `${faultCode} ${symptom} ${probableCause} ${aiSummary}`;
             
-            let matchedWords = 0;
+            let totalHits = 0;
+            const uniqueMatchedWords = new Set();
+
             searchTerms.forEach(term => {
-                if (searchableContent.includes(term)) {
-                    matchedWords++;
+                const escapedTerm = escapeRegExp(term);
+                const occurrences = (searchableContent.match(new RegExp(escapedTerm, 'gi')) || []).length;
+                if (occurrences > 0) {
+                    totalHits += occurrences;
+                    uniqueMatchedWords.add(term);
                 }
             });
 
-            if (matchedWords > 0) {
-                let score = matchedWords;
-                // If all terms match, give a large score bonus to prioritize it
-                if (matchedWords === searchTerms.length) {
-                    score += 100;
+            if (totalHits > 0) {
+                const matchedWordsCount = uniqueMatchedWords.size;
+                let score = matchedWordsCount;
+                if (matchedWordsCount === searchTerms.length) {
+                    score += 100; // Prioritize results that contain all search terms
                 }
-                scoredResults.push({ code: faultCode, symptom: fault.getElementsByTagName("symptom")[0].textContent, score: score });
+                scoredResults.push({ 
+                    code: faultCode, 
+                    symptom: fault.getElementsByTagName("symptom")[0].textContent, 
+                    score: score,
+                    totalHits: totalHits,
+                    matchedWords: matchedWordsCount
+                });
             }
         }
 
-        // Sort results by score, descending
-        scoredResults.sort((a, b) => b.score - a.score);
+        scoredResults.sort((a, b) => b.score - a.score || b.totalHits - a.totalHits);
 
-        // Re-render the list based on sorted results
         faultCodeList.innerHTML = '';
         if (scoredResults.length > 0) {
             scoredResults.forEach(result => {
                 const listItem = document.createElement("li");
-                listItem.textContent = `Fault ${result.code}: ${result.symptom}`;
+                
+                const hitCountSpan = document.createElement("span");
+                hitCountSpan.className = "hit-count";
+                hitCountSpan.textContent = `${result.matchedWords} ${result.matchedWords > 1 ? 'words' : 'word'}, ${result.totalHits} ${result.totalHits > 1 ? 'hits' : 'hit'}`;
+                
+                const faultText = document.createTextNode(` Fault ${result.code}: ${result.symptom}`);
+                
+                listItem.appendChild(hitCountSpan);
+                listItem.appendChild(faultText);
                 listItem.dataset.faultCode = result.code;
                 listItem.addEventListener("click", () => showFaultDetails(result.code));
                 faultCodeList.appendChild(listItem);
@@ -196,27 +214,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- Event Listeners ---
     
-    // Live search filtering as the user types
     searchInput.addEventListener("input", filterFaultList);
 
-    // Listeners for Fault Details Modal
     faultCloseButton.addEventListener("click", () => faultModal.style.display = "none");
     
-    // Listeners for Diagnostic Mode Modal
     diagnosticModeButton.addEventListener("click", showDiagnosticModeInfo);
     diagnosticCloseButton.addEventListener("click", () => diagnosticModal.style.display = "none");
 
-    // Listener for new FaceBook Button
     facebookButton.addEventListener("click", () => {
         window.open("https://www.facebook.com/groups/yamahamt01ridersgroup", "_blank");
     });
 
-    // Listener for new Manual Button
     manualButton.addEventListener("click", () => {
         window.open('Manual2005.pdf', '_blank');
     });
 
-    // Listener to close either modal by clicking outside
     window.addEventListener("click", (event) => {
         if (event.target == faultModal) {
             faultModal.style.display = "none";

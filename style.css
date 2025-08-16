@@ -49,11 +49,26 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center content */
 }
 
 .fault-code-index li:hover {
     background-color: #e9e9e9;
 }
+
+/* New style for the hit count badge */
+.hit-count {
+    background-color: #007bff;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevent the badge text from wrapping */
+}
+
 
 /* Modal Styles */
 .modal {
