@@ -26,7 +26,7 @@ body {
     border: 1px solid #ddd;
 }
 
-#searchButton, #diagnosticModeButton {
+#searchButton, #diagnosticModeButton, #facebookButton, #manualButton {
     padding: 8px 12px;
     border: none;
     background-color: #007bff;
@@ -150,4 +150,4 @@ body {
 
 .search-online-button:hover {
     background-color: #218838;
-}
+}```

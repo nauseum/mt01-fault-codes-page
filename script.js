@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const diagnosticModalBody = document.getElementById("diagnostic-modal-body");
     const diagnosticCloseButton = diagnosticModal.querySelector(".close-button");
 
+    // New Buttons
+    const facebookButton = document.getElementById("facebookButton");
+    const manualButton = document.getElementById("manualButton");
+
     let xmlData;
     let summaryXmlData;
 
@@ -153,6 +157,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Listeners for Diagnostic Mode Modal
     diagnosticModeButton.addEventListener("click", showDiagnosticModeInfo);
     diagnosticCloseButton.addEventListener("click", () => diagnosticModal.style.display = "none");
+
+    // Listener for new FaceBook Button
+    facebookButton.addEventListener("click", () => {
+        window.open("https://www.facebook.com/groups/yamahamt01ridersgroup", "_blank");
+    });
+
+    // Listener for new Manual Button
+    manualButton.addEventListener("click", () => {
+        // Open the PDF in a new tab, allowing the browser's viewer to handle it.
+        window.open('Manual2005.pdf', '_blank');
+    });
 
     // Listener to close either modal by clicking outside
     window.addEventListener("click", (event) => {
